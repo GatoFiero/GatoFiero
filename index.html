@@ -3,108 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro 90s Christmas</title>
+    <title>Gato Fiero's Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul class="navigation-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Navigation Menu -->
-<nav id="navigation">
-    <div class="nav-container">
-        <span class="nav-toggle" id="js-nav-toggle">&#9776;</span>
-        <ul class="nav-menu" id="js-nav-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#social">Social Media</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#music">Music</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#progress">Progress</a></li>
-            <li><a href="#countdown">Countdown</a></li>
+    <section id="home">
+        <h1>Welcome to Gato Fiero's Website</h1>
+        <iframe src="https://open.spotify.com/embed/artist/{spotify_artist_id}" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="gallery">
+        <h2>Art Gallery</h2>
+        <div class="image-gallery">
+            <!-- Add your images here -->
+        </div>
+    </section>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <ul class="event-calendar">
+            <li>August 16, 2024: Alien: Romulus</li>
+            <li>September 20, 2024: NFC 168</li>
+            <li>November 8, 2024: ONE 169</li>
         </ul>
-    </div>
-</nav>
+        <div class="countdown">
+            <h3>Countdown to Events:</h3>
+            <div id="countdown1" class="timer">Alien: Romulus</div>
+            <div id="countdown2" class="timer">NFC 168</div>
+            <div id="countdown3" class="timer">ONE 169</div>
+        </div>
+    </section>
 
-<!-- Header -->
-<header id="home">
-    <h1>Retro 90s Christmas</h1>
-</header>
+    <section id="projects">
+        <h2>Project Progress</h2>
+        <div class="progress-bar">
+            <span>Maldoror: 20%</span>
+            <div class="progress"><div class="progress-done" style="width: 20%;"></div></div>
+        </div>
+        <div class="progress-bar">
+            <span>Jungle: 35%</span>
+            <div class="progress"><div class="progress-done" style="width: 35%;"></div></div>
+        </div>
+    </section>
 
-<!-- Contact Form -->
-<section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" value="gatofiero92@gmail.com" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Send</button>
-    </form>
-</section>
-
-<!-- Social Media Buttons -->
-<section id="social">
-    <h2>Follow Us</h2>
-    <div class="social-buttons">
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">Instagram</a>
-    </div>
-</section>
-
-<!-- Testimonials -->
-<section id="testimonials">
-    <h2>Testimonials</h2>
-    <blockquote>"This is the best site ever!" - User 1</blockquote>
-    <blockquote>"Amazing retro vibes!" - User 2</blockquote>
-</section>
-
-<!-- Music -->
-<section id="music">
-    <h2>Music</h2>
-    <div class="youtube-player">
-        <iframe width="560" height="315" src="https://music.youtube.com/channel/UCXe-FckTw6Vtc64ATBbBl9A?si=OC-WxxU0x7rlEwx3" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-</section>
-
-<!-- Event Calendar -->
-<section id="events">
-    <h2>Event Calendar</h2>
-    <div id="calendar">[Event Calendar Placeholder]</div>
-</section>
-
-<!-- Art Gallery -->
-<section id="gallery">
-    <h2>Art Gallery</h2>
-    <div class="art-gallery">
-        <img src="image1.jpg" alt="Art 1">
-        <img src="image2.jpg" alt="Art 2">
-        <img src="image3.jpg" alt="Art 3">
-    </div>
-</section>
-
-<!-- Progress Bar -->
-<section id="progress">
-    <h2>Project Progress</h2>
-    <div class="progress-bar">
-        <div class="progress" style="width: 20%;">Maldoror - 20%</div>
-    </div>
-    <div class="progress-bar">
-        <div class="progress" style="width: 35%;">Jungle - 35%</div>
-    </div>
-</section>
-
-<!-- Countdown Timers -->
-<section id="countdown">
-    <h2>Countdown to Events</h2>
-    <div class="countdown-timer" data-date="2024-08-16T00:00:00">Alien: Romulus</div>
-    <div class="countdown-timer" data-date="2024-09-20T00:00:00">NFC 168</div>
-    <div class="countdown-timer" data-date="2024-11-08T00:00:00">ONE 169</div>
-</section>
-
-<script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
