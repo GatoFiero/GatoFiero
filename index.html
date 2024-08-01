@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gothic Neon Carnival</title>
+    <title>Neon Christmas Carnival</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/glitch-canvas"></script>
 </head>
 <body>
 
@@ -14,28 +12,22 @@
 <nav id="navigation">
     <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#social">Social Media</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#music">Music</a></li>
         <li><a href="#events">Events</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#poll">Poll</a></li>
+        <li><a href="#progress">Progress</a></li>
+        <li><a href="#countdown">Countdown</a></li>
     </ul>
 </nav>
 
 <!-- Header -->
 <header id="home">
-    <h1 class="glitch" data-text="Gothic Neon Carnival">Gothic Neon Carnival</h1>
+    <h1>Neon Christmas Carnival</h1>
 </header>
-
-<!-- Image Carousel/Slider -->
-<section id="gallery">
-    <h2>Gallery</h2>
-    <div class="carousel">
-        <img src="image1.jpg" alt="Image 1">
-        <img src="image2.jpg" alt="Image 2">
-        <img src="image3.jpg" alt="Image 3">
-    </div>
-</section>
 
 <!-- Contact Form -->
 <section id="contact">
@@ -72,16 +64,28 @@
     </blockquote>
 </section>
 
+<!-- YouTube Music Player Embed -->
+<section id="music">
+    <h2>Music by Gato Fiero</h2>
+    <div class="youtube-player">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed?listType=user_uploads&list=UC-9-kyTW8ZkZNDHQJ6FgpwQ&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</section>
+
 <!-- Event Calendar -->
 <section id="events">
     <h2>Upcoming Events</h2>
     <div id="calendar"></div>
 </section>
 
-<!-- Animated Elements -->
-<section id="animation">
-    <h2>Animation</h2>
-    <div class="animated-element">Hover over me!</div>
+<!-- Art Gallery -->
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="art-gallery">
+        <img src="image1.jpg" alt="Art 1">
+        <img src="image2.jpg" alt="Art 2">
+        <img src="image3.jpg" alt="Art 3">
+    </div>
 </section>
 
 <!-- User Poll -->
@@ -94,13 +98,6 @@
         <button type="submit">Vote</button>
     </form>
 </section>
-
-<!-- Custom Cursor -->
-<style>
-    body {
-        cursor: url('cursor.png'), auto;
-    }
-</style>
 
 <!-- Progress Bar -->
 <section id="progress">
@@ -116,35 +113,11 @@
     <div id="timer"></div>
 </section>
 
-<!-- Text Scramble Effect -->
-<section id="scramble">
-    <h2 class="scramble" data-text="Amazing Effects">Amazing Effects</h2>
-</section>
-
-<!-- Visitor Counter -->
-<section id="counter">
-    <h2>Visitor Count</h2>
-    <p id="visitorCount">Visitors: 0</p>
-</section>
-
-<!-- Easter Eggs -->
-<script>
-    document.body.addEventListener('keydown', function(event) {
-        if (event.ctrlKey && event.shiftKey && event.key === 'E') {
-            alert('You found an Easter Egg!');
-        }
-    });
-</script>
-
-<!-- Glitch Effects -->
-<section id="glitch">
-    <h2 class="glitch" data-text="Glitch Effect">Glitch Effect</h2>
-</section>
-
 <!-- Footer -->
 <footer>
-    <p>&copy; 2024 Gothic Neon Carnival. All rights reserved.</p>
+    <p>&copy; 2024 Neon Christmas Carnival. All rights reserved.</p>
 </footer>
 
+<script src="scripts.js"></script>
 </body>
 </html>
