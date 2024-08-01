@@ -3,43 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alien Retro 90s Website</title>
+    <title>Creepy Carnival Website</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Spectral+SC:wght@300&display=swap');
+
         body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: #0b0c0d;
-            color: #39ff14;
+            font-family: 'Spectral SC', serif;
+            background-color: #2b1e1e;
+            color: #e1c699;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             overflow-x: hidden;
-            text-shadow: 1px 1px 2px #39ff14;
+            text-shadow: 2px 2px 4px #000;
         }
         .container {
             text-align: center;
             max-width: 90%;
             margin: auto;
+            padding: 20px;
         }
         h1, h2 {
+            font-family: 'Creepster', cursive;
             margin: 0.5em 0;
+            color: #d63333;
+            text-shadow: 3px 3px 6px #000;
         }
         .content {
-            background-color: #0e0f0f;
+            background-color: #3a2c2c;
             padding: 1em;
-            border: 2px solid #39ff14;
+            border: 2px solid #d63333;
             margin: 20px 0;
-            box-shadow: 0 0 10px #39ff14;
+            box-shadow: 0 0 15px #d63333;
+            border-radius: 10px;
         }
         a {
-            color: #39ff14;
+            color: #e1c699;
             text-decoration: none;
-            border-bottom: 1px dashed #39ff14;
+            border-bottom: 1px dashed #e1c699;
         }
         a:hover {
-            color: #fff;
-            background-color: #39ff14;
+            color: #d63333;
+            background-color: #e1c699;
         }
         .footer {
             margin-top: 2em;
@@ -49,46 +56,59 @@
             width: 100%;
             max-width: 200px;
             margin: 10px;
-            border: 2px solid #39ff14;
+            border: 2px solid #d63333;
+            box-shadow: 0 0 10px #000;
         }
         .blog-entry {
-            border: 2px solid #39ff14;
+            border: 2px solid #d63333;
             padding: 10px;
             margin: 10px 0;
             text-align: left;
+            background-color: #2b1e1e;
         }
         .blog-entry h3 {
             margin-top: 0;
+            color: #d63333;
         }
         .retro-border {
             padding: 20px;
             margin: 20px 0;
-            border: 4px solid #39ff14;
-            box-shadow: 0 0 10px #39ff14;
+            border: 4px solid #d63333;
+            box-shadow: 0 0 15px #d63333;
+            border-radius: 10px;
+        }
+        .main-nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .main-nav li {
+            display: inline;
+            margin: 0 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="retro-border">
-            <h1>Welcome to My Alien Retro 90s Site</h1>
+            <h1>Welcome to the website of Gato Fiero</h1>
             <div class="content">
-                <p>Inspired by the 1979 movie "Alien" and the vibrant web aesthetics of the 90s, this site is a tribute to the era of green monochrome screens and retro sci-fi.</p>
-                <p>Explore the links below to learn more:</p>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#music">Music</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <p>Step right up to a world of extravagant delights and beloved sounds from your favorite artist.</p>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#music">Music</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
 
         <div id="about" class="retro-border">
             <h2>About</h2>
             <div class="content">
-                <p>This website is dedicated to fans of the classic "Alien" movie and the nostalgic vibes of the 90s internet. Dive in to explore the retro aesthetics and enjoy some cool content!</p>
+                <p>This website is dedicated to fans of the music of Gato Fiero!</p>
             </div>
         </div>
 
@@ -105,7 +125,7 @@
             <h2>Music</h2>
             <div class="content">
                 <p>Listen to music by Gato Fiero on Spotify:</p>
-                <iframe src="https://open.spotify.com/embed/artist/4ukz8Pl0euzsRvqPrPW50q?si=4spW7fATRPOe-I-jmg45Nw?theme=0" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed/artist/4ukz8Pl0euzsRvqPrPW50q?si=4spW7fATRPOe-I-jmg45Nw" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
         </div>
 
@@ -133,7 +153,7 @@
         </div>
 
         <div class="footer">
-            <p>© 2024 Retro Alien. All rights reserved.</p>
+            <p>© 2024 Creepy Carnival. All rights reserved.</p>
         </div>
     </div>
 </body>
