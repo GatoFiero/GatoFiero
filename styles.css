@@ -1,72 +1,141 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
-    color: lime;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: darkred;
-    padding: 10px 0;
-    text-align: center;
-}
-
+/* Navigation Styles */
 .navigation-menu {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
     margin: 0;
 }
 
 .navigation-menu li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0;
 }
 
 .navigation-menu a {
-    color: lime;
+    color: white;
     text-decoration: none;
+    padding: 15px 20px;
+    display: block;
 }
 
+.navigation-menu a:hover {
+    background-color: #575757;
+}
+
+/* Section Styles */
 section {
     padding: 20px;
     margin: 20px;
-    border: 1px solid lime;
 }
 
-button {
-    background-color: darkred;
-    color: lime;
+/* Home Section */
+#home iframe {
+    width: 100%;
+    max-width: 660px;
+    height: 380px;
     border: none;
-    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: red;
+form button:hover {
+    background-color: #575757;
 }
 
-.progress-bar {
-    margin: 20px 0;
+/* Gallery Section */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
-.progress {
-    background-color: darkred;
-    border-radius: 20px;
-    padding: 5px;
+.image-gallery img {
     width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
 
-.progress-done {
-    background-color: lime;
-    border-radius: 20px;
-    height: 20px;
+.image-gallery img:hover {
+    transform: scale(1.05);
 }
 
+/* Events Section */
 .event-calendar {
     list-style: none;
     padding: 0;
 }
 
+.event-calendar li {
+    padding: 10px 0;
+}
+
+.countdown {
+    margin-top: 20px;
+}
+
 .timer {
-    color: lime;
-    margin: 10px 0;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Projects Section */
+.progress-bar {
+    margin-bottom: 20px;
+}
+
+.progress {
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-done {
+    background-color: #333;
+    height: 20px;
+    border-radius: 4px 0 0 4px;
 }
