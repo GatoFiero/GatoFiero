@@ -14,13 +14,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 100vh;
-            overflow-y: auto;
+            overflow-x: hidden;
             text-shadow: 1px 1px 2px #39ff14;
         }
         .container {
             text-align: center;
-            max-width: 80%;
+            max-width: 90%;
             margin: auto;
         }
         h1, h2 {
@@ -30,7 +29,8 @@
             background-color: #0e0f0f;
             padding: 1em;
             border: 2px solid #39ff14;
-            margin: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px #39ff14;
         }
         a {
             color: #39ff14;
@@ -45,15 +45,8 @@
             margin-top: 2em;
             font-size: 0.8em;
         }
-        .retro-border {
-            border: 4px solid #39ff14;
-            padding: 20px;
-            margin: 20px;
-            box-shadow: 0 0 10px #39ff14;
-        }
         .gallery img {
             width: 100%;
-            height: auto;
             max-width: 200px;
             margin: 10px;
             border: 2px solid #39ff14;
@@ -66,6 +59,12 @@
         }
         .blog-entry h3 {
             margin-top: 0;
+        }
+        .retro-border {
+            padding: 20px;
+            margin: 20px 0;
+            border: 4px solid #39ff14;
+            box-shadow: 0 0 10px #39ff14;
         }
     </style>
 </head>
@@ -106,7 +105,7 @@
             <h2>Music</h2>
             <div class="content">
                 <p>Listen to music by Gato Fiero on Spotify:</p>
-                <a href="https://open.spotify.com/artist/4ukz8Pl0euzsRvqPrPW50q?si=4spW7fATRPOe-I-jmg45Nw" target="_blank">Play on Spotify</a>
+                <iframe src="https://open.spotify.com/embed/artist/4ukz8Pl0euzsRvqPrPW50q?si=4spW7fATRPOe-I-jmg45Nw?theme=0" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
         </div>
 
@@ -129,7 +128,7 @@
         <div id="contact" class="retro-border">
             <h2>Contact</h2>
             <div class="content">
-                <p>Get in touch with me through my email: <a href="mailto:your-gatofiero92@gmail.com">your-email@example.com</a></p>
+                <p>Get in touch with me through my email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
             </div>
         </div>
 
