@@ -1,203 +1,72 @@
-/* General Styles */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-    background: #000;
-    color: #00ff00;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: lime;
 }
 
-h1, h2 {
-    color: #ff0000;
-}
-
-/* Navigation Menu */
-nav {
-    background: #111;
-    padding: 1em;
+header {
+    background-color: darkred;
+    padding: 10px 0;
     text-align: center;
-    position: relative;
 }
 
-.nav-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.nav-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 2em;
-    color: #00ff00;
-}
-
-.nav-menu {
+.navigation-menu {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
-.nav-menu li {
-    margin: 0.5em;
+.navigation-menu li {
+    display: inline;
+    margin: 0 10px;
 }
 
-.nav-menu a {
-    color: #00ff00;
+.navigation-menu a {
+    color: lime;
     text-decoration: none;
-    padding: 0.5em 1em;
-    border: 2px solid #00ff00;
-    border-radius: 5px;
-    display: block;
 }
 
-.nav-menu a:hover {
-    color: #ff0000;
-    background: #00ff00;
-    border-color: #ff0000;
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid lime;
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-    .nav-toggle {
-        display: block;
-    }
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        background: #111;
-        position: absolute;
-        width: 100%;
-        top: 100%;
-        left: 0;
-        border-top: 2px solid #00ff00;
-    }
-    .nav-menu li {
-        margin: 0;
-    }
-    .nav-menu.show {
-        display: flex;
-    }
-}
-
-/* Header */
-header {
-    text-align: center;
-    padding: 2em 0;
-}
-
-/* Contact Form */
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
-    background: #111;
-    padding: 1em;
-    border-radius: 10px;
-}
-
-form label {
-    margin-top: 1em;
-}
-
-form input, form textarea {
-    padding: 0.5em;
-    margin-top: 0.5em;
-    border: 2px solid #00ff00;
-    border-radius: 5px;
-    background: #222;
-    color: #00ff00;
-}
-
-form button {
-    margin-top: 1em;
-    padding: 0.5em;
-    background: #00ff00;
-    border: 2px solid #222;
-    border-radius: 5px;
-    color: #111;
+button {
+    background-color: darkred;
+    color: lime;
+    border: none;
+    padding: 10px 20px;
     cursor: pointer;
-    text-shadow: 1px 1px 2px #ff0000;
 }
 
-form button:hover {
-    background: #ff0000;
-    color: #fff;
+button:hover {
+    background-color: red;
 }
 
-/* Social Buttons */
-.social-buttons a {
-    display: inline-block;
-    margin: 0 1em;
-    padding: 0.5em 1em;
-    background: #222;
-    color: #00ff00;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.social-buttons a:hover {
-    background: #00ff00;
-    color: #222;
-}
-
-/* Testimonials */
-blockquote {
-    background: #111;
-    padding: 1em;
-    border-left: 5px solid #00ff00;
-    margin: 1em 0;
-}
-
-/* Music Player */
-.youtube-player {
-    text-align: center;
-}
-
-/* Event Calendar */
-#calendar {
-    background: #111;
-    padding: 1em;
-    border: 1px solid #00ff00;
-    border-radius: 5px;
-}
-
-/* Art Gallery */
-.art-gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.art-gallery img {
-    width: 300px;
-    margin: 10px;
-    border: 5px solid #00ff00;
-    border-radius: 5px;
-}
-
-/* Progress Bar */
 .progress-bar {
-    background: #222;
-    padding: 1em;
-    border-radius: 5px;
-    margin-bottom: 1em;
+    margin: 20px 0;
 }
 
 .progress {
-    background: #00ff00;
-    height: 20px;
-    border-radius: 5px;
+    background-color: darkred;
+    border-radius: 20px;
+    padding: 5px;
+    width: 100%;
 }
 
-/* Countdown Timer */
-.countdown-timer {
-    background: #222;
-    padding: 1em;
-    border-radius: 5px;
-    margin: 1em 0;
-    color: #
+.progress-done {
+    background-color: lime;
+    border-radius: 20px;
+    height: 20px;
+}
+
+.event-calendar {
+    list-style: none;
+    padding: 0;
+}
+
+.timer {
+    color: lime;
+    margin: 10px 0;
+}
