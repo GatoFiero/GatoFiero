@@ -3,17 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Found Footage Carnival</title>
+    <title>Gothic Neon Carnival</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
-    <!-- External Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glitch-canvas"></script>
 </head>
 <body>
-
-<!-- Particle Background -->
-<div id="particles-js"></div>
 
 <!-- Navigation Menu -->
 <nav id="navigation">
@@ -21,18 +16,20 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#social">Social Media</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#events">Events</a></li>
-        <li><a href="#about">About</a></li>
     </ul>
 </nav>
 
 <!-- Header -->
 <header id="home">
-    <h1 class="glitch" data-text="Found Footage Carnival">Found Footage Carnival</h1>
+    <h1 class="glitch" data-text="Gothic Neon Carnival">Gothic Neon Carnival</h1>
 </header>
 
 <!-- Image Carousel/Slider -->
 <section id="gallery">
+    <h2>Gallery</h2>
     <div class="carousel">
         <img src="image1.jpg" alt="Image 1">
         <img src="image2.jpg" alt="Image 2">
@@ -52,24 +49,6 @@
         <textarea id="message" name="message" required></textarea>
         <button type="submit">Send</button>
     </form>
-</section>
-
-<!-- Embedded Video -->
-<section id="video">
-    <h2>Watch Our Video</h2>
-    <video controls>
-        <source src="video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</section>
-
-<!-- Audio Player -->
-<section id="audio">
-    <h2>Listen to Our Theme</h2>
-    <audio controls>
-        <source src="audio.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
 </section>
 
 <!-- Social Media Buttons -->
@@ -123,12 +102,6 @@
     }
 </style>
 
-<!-- Parallax Scrolling -->
-<section id="parallax">
-    <div class="parallax-bg"></div>
-    <h2>Parallax Effect</h2>
-</section>
-
 <!-- Progress Bar -->
 <section id="progress">
     <h2>Project Progress</h2>
@@ -146,31 +119,6 @@
 <!-- Text Scramble Effect -->
 <section id="scramble">
     <h2 class="scramble" data-text="Amazing Effects">Amazing Effects</h2>
-</section>
-
-<!-- SVG Animations -->
-<section id="svg">
-    <h2>SVG Animation</h2>
-    <svg width="100" height="100">
-        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red">
-            <animate attributeName="r" from="40" to="10" dur="1s" begin="0s" repeatCount="indefinite"/>
-        </circle>
-    </svg>
-</section>
-
-<!-- Retro Terminal Interface -->
-<section id="terminal">
-    <h2>Retro Terminal</h2>
-    <div class="terminal">
-        <div id="zork">
-            <pre>
-                Welcome to Zork!
-                You are standing in an open field west of a white house, with a boarded front door.
-                There is a small mailbox here.
-                > 
-            </pre>
-        </div>
-    </div>
 </section>
 
 <!-- Visitor Counter -->
@@ -195,7 +143,7 @@
 
 <!-- Footer -->
 <footer>
-    <p>&copy; 2024 Found Footage Carnival. All rights reserved.</p>
+    <p>&copy; 2024 Gothic Neon Carnival. All rights reserved.</p>
 </footer>
 
 </body>
