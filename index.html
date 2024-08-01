@@ -3,158 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creepy Carnival Website</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Spectral+SC:wght@300&display=swap');
-
-        body {
-            font-family: 'Spectral SC', serif;
-            background-color: #2b1e1e;
-            color: #e1c699;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow-x: hidden;
-            text-shadow: 2px 2px 4px #000;
-        }
-        .container {
-            text-align: center;
-            max-width: 90%;
-            margin: auto;
-            padding: 20px;
-        }
-        h1, h2 {
-            font-family: 'Creepster', cursive;
-            margin: 0.5em 0;
-            color: #d63333;
-            text-shadow: 3px 3px 6px #000;
-        }
-        .content {
-            background-color: #3a2c2c;
-            padding: 1em;
-            border: 2px solid #d63333;
-            margin: 20px 0;
-            box-shadow: 0 0 15px #d63333;
-            border-radius: 10px;
-        }
-        a {
-            color: #e1c699;
-            text-decoration: none;
-            border-bottom: 1px dashed #e1c699;
-        }
-        a:hover {
-            color: #d63333;
-            background-color: #e1c699;
-        }
-        .footer {
-            margin-top: 2em;
-            font-size: 0.8em;
-        }
-        .gallery img {
-            width: 100%;
-            max-width: 200px;
-            margin: 10px;
-            border: 2px solid #d63333;
-            box-shadow: 0 0 10px #000;
-        }
-        .blog-entry {
-            border: 2px solid #d63333;
-            padding: 10px;
-            margin: 10px 0;
-            text-align: left;
-            background-color: #2b1e1e;
-        }
-        .blog-entry h3 {
-            margin-top: 0;
-            color: #d63333;
-        }
-        .retro-border {
-            padding: 20px;
-            margin: 20px 0;
-            border: 4px solid #d63333;
-            box-shadow: 0 0 15px #d63333;
-            border-radius: 10px;
-        }
-        .main-nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .main-nav li {
-            display: inline;
-            margin: 0 10px;
-        }
-    </style>
+    <title>Found Footage Carnival</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://ar-js-org.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="retro-border">
-            <h1>Welcome to the website of Gato Fiero</h1>
-            <div class="content">
-                <p>Step right up to a world of extravagant delights and beloved sounds from your favorite artist.</p>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#music">Music</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
 
-        <div id="about" class="retro-border">
-            <h2>About</h2>
-            <div class="content">
-                <p>This website is dedicated to fans of the music of Gato Fiero!</p>
-            </div>
-        </div>
+<!-- Particle Background -->
+<div id="particles-js"></div>
 
-        <div id="gallery" class="retro-border">
-            <h2>Gallery</h2>
-            <div class="content gallery">
-                <img src="https://via.placeholder.com/200x150" alt="Placeholder Image 1">
-                <img src="https://via.placeholder.com/200x150" alt="Placeholder Image 2">
-                <img src="https://via.placeholder.com/200x150" alt="Placeholder Image 3">
-            </div>
-        </div>
+<!-- Navigation Menu -->
+<nav id="navigation">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</nav>
 
-        <div id="music" class="retro-border">
-            <h2>Music</h2>
-            <div class="content">
-                <p>Listen to music by Gato Fiero on Spotify:</p>
-                <iframe src="https://open.spotify.com/embed/artist/4ukz8Pl0euzsRvqPrPW50q?si=4spW7fATRPOe-I-jmg45Nw" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-        </div>
+<!-- Header -->
+<header id="home">
+    <h1 class="glitch" data-text="Found Footage Carnival">Found Footage Carnival</h1>
+</header>
 
-        <div id="blog" class="retro-border">
-            <h2>Weekly Blog</h2>
-            <div class="content">
-                <div class="blog-entry">
-                    <h3>Blog Post Title 1</h3>
-                    <p>Date: 2024-08-01</p>
-                    <p>This is a sample blog post. Share your thoughts and updates with your audience here.</p>
-                </div>
-                <div class="blog-entry">
-                    <h3>Blog Post Title 2</h3>
-                    <p>Date: 2024-07-25</p>
-                    <p>Another sample blog post. Keep your readers engaged with regular updates.</p>
-                </div>
-            </div>
-        </div>
+<!-- Image Carousel/Slider -->
+<section id="gallery">
+    <div class="carousel">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+    </div>
+</section>
 
-        <div id="contact" class="retro-border">
-            <h2>Contact</h2>
-            <div class="content">
-                <p>Get in touch with me through my email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-            </div>
-        </div>
+<!-- Contact Form -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
 
-        <div class="footer">
-            <p>© 2024 Creepy Carnival. All rights reserved.</p>
+<!-- Embedded Video -->
+<section id="video">
+    <h2>Watch Our Video</h2>
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<!-- Audio Player -->
+<section id="audio">
+    <h2>Listen to Our Theme</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+</section>
+
+<!-- Social Media Buttons -->
+<section id="social">
+    <h2>Follow Us</h2>
+    <div class="social-buttons">
+        <a href="#" class="social-button">Facebook</a>
+        <a href="#" class="social-button">Twitter</a>
+        <a href="#" class="social-button">Instagram</a>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials">
+    <h2>What People Say</h2>
+    <blockquote>
+        <p>"An unforgettable experience!" - Jane Doe</p>
+    </blockquote>
+    <blockquote>
+        <p>"Absolutely mesmerizing." - John Smith</p>
+    </blockquote>
+</section>
+
+<!-- Event Calendar -->
+<section id="events">
+    <h2>Upcoming Events</h2>
+    <div id="calendar"></div>
+</section>
+
+<!-- Animated Elements -->
+<section id="animation">
+    <h2>Animation</h2>
+    <div class="animated-element">Hover over me!</div>
+</section>
+
+<!-- User Poll -->
+<section id="poll">
+    <h2>Your Opinion Matters</h2>
+    <form>
+        <label>Do you like our site?</label>
+        <input type="radio" name="poll" value="yes"> Yes
+        <input type="radio" name="poll" value="no"> No
+        <button type="submit">Vote</button>
+    </form>
+</section>
+
+<!-- Custom Cursor -->
+<style>
+    body {
+        cursor: url('cursor.png'), auto;
+    }
+</style>
+
+<!-- Parallax Scrolling -->
+<section id="parallax">
+    <div class="parallax-bg"></div>
+    <h2>Parallax Effect</h2>
+</section>
+
+<!-- Progress Bar -->
+<section id="progress">
+    <h2>Project Progress</h2>
+    <div class="progress-bar">
+        <div class="progress" style="width: 50%;"></div>
+    </div>
+</section>
+
+<!-- Countdown Timer -->
+<section id="countdown">
+    <h2>Countdown to Next Event</h2>
+    <div id="timer"></div>
+</section>
+
+<!-- Text Scramble Effect -->
+<section id="scramble">
+    <h2 class="scramble" data-text="Amazing Effects">Amazing Effects</h2>
+</section>
+
+<!-- 360 Degree Virtual Tour -->
+<section id="virtual-tour">
+    <h2>Explore Our Venue</h2>
+    <a-scene embedded arjs>
+        <a-marker preset="hiro">
+            <a-box position='0 0.5 0' material='color: yellow;'></a-box>
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene>
+</section>
+
+<!-- SVG Animations -->
+<section id="svg">
+    <h2>SVG Animation</h2>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red">
+            <animate attributeName="r" from="40" to="10" dur="1s" begin="0s" repeatCount="indefinite"/>
+        </circle>
+    </svg>
+</section>
+
+<!-- Retro Terminal Interface -->
+<section id="terminal">
+    <h2>Retro Terminal</h2>
+    <div class="terminal">
+        <div id="zork">
+            <pre>
+                Welcome to Zork!
+                You are standing in an open field west of a white house, with a boarded front door.
+                There is a small mailbox here.
+                > 
+            </pre>
         </div>
     </div>
+</section>
+
+<!-- Visitor Counter -->
+<section id="counter">
+    <h2>Visitor Count</h2>
+    <p id="visitorCount">Visitors: 0</p>
+</section>
+
+<!-- Easter Eggs -->
+<script>
+    document.body.addEventListener('keydown', function(event) {
+        if (event.ctrlKey && event.shiftKey && event.key === 'E') {
+            alert('You found an Easter Egg!');
+        }
+    });
+</script>
+
+<!-- Glitch Effects -->
+<section id="glitch">
+    <h2 class="glitch" data-text="Glitch Effect">Glitch Effect</h2>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Found Footage Carnival. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
