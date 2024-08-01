@@ -1,34 +1,24 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const navToggle = document.getElementById('js-nav-toggle');
-    const navMenu = document.getElementById('js-nav-menu');
+// Countdown Timer
+function countdownTimer(eventDate, elementId) {
+    const eventDateTime = new Date(eventDate).getTime();
+    const timer = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = eventDateTime - now;
 
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('show');
-    });
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    const countdownElements = document.querySelectorAll('.countdown-timer');
+        document.getElementById(elementId).innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 
-    countdownElements.forEach(timer => {
-        const targetDate = new Date(timer.getAttribute('data-date')).getTime();
+        if (distance < 0) {
+            clearInterval(timer);
+            document.getElementById(elementId).innerHTML = "Event Started";
+        }
+    }, 1000);
+}
 
-        const updateCountdown = () => {
-            const now = new Date().getTime();
-            const distance = targetDate - now;
-
-            if (distance < 0) {
-                timer.innerHTML = 'Event has passed';
-                return;
-            }
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            timer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-        };
-
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-    });
-});
+countdownTimer("Aug 16, 2024 00:00:00", "countdown1");
+countdownTimer("Sep 20, 2024 00:00:00", "countdown2");
+countdownTimer("Nov 8, 2024 00:00:00", "countdown3");
