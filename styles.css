@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #121212; /* Dark background */
+    color: #fff; /* Light text color */
 }
 
 /* Navigation Styles */
@@ -11,7 +13,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: space-around;
-    background-color: #333;
+    background-color: #222;
     margin: 0;
 }
 
@@ -20,7 +22,7 @@ body {
 }
 
 .navigation-menu a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     padding: 15px 20px;
     display: block;
@@ -34,6 +36,9 @@ body {
 section {
     padding: 20px;
     margin: 20px;
+    background-color: #333; /* Section background color */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Home Section */
@@ -43,7 +48,7 @@ section {
     height: 380px;
     border: none;
     border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Contact Section */
@@ -54,6 +59,7 @@ form {
 
 form label {
     margin-top: 10px;
+    color: #ccc; /* Label color */
 }
 
 form input,
@@ -61,20 +67,23 @@ form textarea {
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #444;
     border-radius: 4px;
+    background-color: #555; /* Input background color */
+    color: #fff; /* Input text color */
 }
 
 form button {
     padding: 10px;
     border: none;
-    background-color: #333;
+    background-color: #c72e2e; /* Christmas red */
     color: white;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 form button:hover {
-    background-color: #575757;
+    background-color: #e74c3c; /* Lighter red */
 }
 
 /* Gallery Section */
@@ -90,9 +99,9 @@ form button:hover {
     max-width: 300px;
     height: auto;
     object-fit: cover;
-    border: 1px solid #ddd;
+    border: 1px solid #555;
     border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s;
 }
 
@@ -108,6 +117,7 @@ form button:hover {
 
 .event-calendar li {
     padding: 10px 0;
+    color: #ccc; /* Event text color */
 }
 
 .countdown {
@@ -117,10 +127,11 @@ form button:hover {
 .timer {
     padding: 10px;
     margin: 5px 0;
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
+    background-color: #444;
+    border: 1px solid #555;
     border-radius: 4px;
     text-align: center;
+    color: #fff;
 }
 
 /* Projects Section */
@@ -129,13 +140,13 @@ form button:hover {
 }
 
 .progress {
-    background-color: #f4f4f4;
+    background-color: #444;
     border-radius: 4px;
     overflow: hidden;
 }
 
 .progress-done {
-    background-color: #333;
+    background-color: #2ecc71; /* Christmas green */
     height: 20px;
     border-radius: 4px 0 0 4px;
 }
