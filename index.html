@@ -3,24 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+    <title>Alien Retro 90s Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #0b0c0d;
+            color: #39ff14;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            overflow-y: auto;
+            text-shadow: 1px 1px 2px #39ff14;
         }
-        h1 {
-            color: #333;
+        .container {
+            text-align: center;
+            max-width: 80%;
+            margin: auto;
+        }
+        h1, h2 {
+            margin: 0.5em 0;
+        }
+        .content {
+            background-color: #0e0f0f;
+            padding: 1em;
+            border: 2px solid #39ff14;
+            margin: 20px;
+        }
+        a {
+            color: #39ff14;
+            text-decoration: none;
+            border-bottom: 1px dashed #39ff14;
+        }
+        a:hover {
+            color: #fff;
+            background-color: #39ff14;
+        }
+        .footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+        }
+        .retro-border {
+            border: 4px solid #39ff14;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px #39ff14;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            margin: 10px;
+            border: 2px solid #39ff14;
+        }
+        .blog-entry {
+            border: 2px solid #39ff14;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: left;
+        }
+        .blog-entry h3 {
+            margin-top: 0;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Pages Site</h1>
+    <div class="container">
+        <div class="retro-border">
+            <h1>Welcome to My Alien Retro 90s Site</h1>
+            <div class="content">
+                <p>Inspired by the 1979 movie "Alien" and the vibrant web aesthetics of the 90s, this site is a tribute to the era of green monochrome screens and retro sci-fi.</p>
+                <p>Explore the links below to learn more:</p>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="about" class="retro-border">
+            <h2>About</h2>
+            <div class="content">
+                <p>This website is dedicated to fans of the classic "Alien" movie and the nostalgic vibes of the 90s internet. Dive in to explore the retro aesthetics and enjoy some cool content!</p>
+            </div>
+        </div>
+
+        <div id="gallery" class="retro-border">
+            <h2>Gallery</h2>
+            <div class="content gallery">
+                <img src="https://via.placeholder.com/200x150" alt="Placeholder Image 1">
+                <img src="https://via.placeholder.com/200x150" alt="Placeholder Image 2">
+                <img src="https://via.placeholder.com/200x150" alt="Placeholder Image 3">
+            </div>
+        </div>
+
+        <div id="music" class="retro-border">
+            <h2>Music</h2>
+            <div class="content">
+                <p>Listen to music by Gato Fiero on Spotify:</p>
+                <a href="https://open.spotify.com/artist/4ukz8Pl0euzsRvqPrPW50q?si=4spW7fATRPOe-I-jmg45Nw" target="_blank">Play on Spotify</a>
+            </div>
+        </div>
+
+        <div id="blog" class="retro-border">
+            <h2>Weekly Blog</h2>
+            <div class="content">
+                <div class="blog-entry">
+                    <h3>Blog Post Title 1</h3>
+                    <p>Date: 2024-08-01</p>
+                    <p>This is a sample blog post. Share your thoughts and updates with your audience here.</p>
+                </div>
+                <div class="blog-entry">
+                    <h3>Blog Post Title 2</h3>
+                    <p>Date: 2024-07-25</p>
+                    <p>Another sample blog post. Keep your readers engaged with regular updates.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="retro-border">
+            <h2>Contact</h2>
+            <div class="content">
+                <p>Get in touch with me through my email: <a href="mailto:your-gatofiero92@gmail.com">your-email@example.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 Retro Alien. All rights reserved.</p>
+        </div>
+    </div>
 </body>
 </html>
