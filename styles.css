@@ -1,18 +1,19 @@
 body {
+    font-family: Arial, sans-serif;
     background-color: black;
     color: lime;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 header {
+    background-color: darkred;
+    padding: 10px 0;
     text-align: center;
-    padding: 10px;
-    background-color: #003300;
 }
 
 .navigation-menu {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .navigation-menu li {
@@ -21,107 +22,51 @@ header {
 }
 
 .navigation-menu a {
-    color: red;
+    color: lime;
     text-decoration: none;
-    font-size: 1.2em;
 }
 
-h1, h2 {
-    color: red;
-}
-
-form {
-    background-color: #002200;
+section {
     padding: 20px;
-    border-radius: 5px;
+    margin: 20px;
+    border: 1px solid lime;
 }
 
 button {
-    background-color: red;
-    color: white;
+    background-color: darkred;
+    color: lime;
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: lime;
+    background-color: red;
 }
 
-.carousel {
-    position: relative;
-    max-width: 600px;
-    margin: auto;
+.progress-bar {
+    margin: 20px 0;
 }
 
-.slides {
-    display: none;
-}
-
-.slides img {
+.progress {
+    background-color: darkred;
+    border-radius: 20px;
+    padding: 5px;
     width: 100%;
-    height: auto;
 }
 
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.progress-done {
+    background-color: lime;
+    border-radius: 20px;
+    height: 20px;
 }
 
 .event-calendar {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 .timer {
     color: lime;
-    font-size: 1.2em;
-    margin: 5px 0;
-}
-
-.progress-bar {
     margin: 10px 0;
-}
-
-.progress {
-    background-color: #002200;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.progress-done {
-    background-color: lime;
-    height: 20px;
-    border-radius: 5px;
-}
-
-.spotify-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.spotify-container iframe {
-    width: 100%;
-    max-width: 400px;
-    height: 380px;
 }
