@@ -1,152 +1,127 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #121212; /* Dark background */
-    color: #fff; /* Light text color */
+    background-color: black;
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-/* Navigation Styles */
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #003300;
+}
+
 .navigation-menu {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: space-around;
-    background-color: #222;
-    margin: 0;
 }
 
 .navigation-menu li {
-    margin: 0;
+    display: inline;
+    margin: 0 10px;
 }
 
 .navigation-menu a {
-    color: #fff;
+    color: red;
     text-decoration: none;
-    padding: 15px 20px;
-    display: block;
+    font-size: 1.2em;
 }
 
-.navigation-menu a:hover {
-    background-color: #575757;
+h1, h2 {
+    color: red;
 }
 
-/* Section Styles */
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #333; /* Section background color */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-/* Home Section */
-#home iframe {
-    width: 100%;
-    max-width: 660px;
-    height: 380px;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-/* Contact Section */
 form {
-    display: flex;
-    flex-direction: column;
+    background-color: #002200;
+    padding: 20px;
+    border-radius: 5px;
 }
 
-form label {
-    margin-top: 10px;
-    color: #ccc; /* Label color */
-}
-
-form input,
-form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #444;
-    border-radius: 4px;
-    background-color: #555; /* Input background color */
-    color: #fff; /* Input text color */
-}
-
-form button {
-    padding: 10px;
-    border: none;
-    background-color: #c72e2e; /* Christmas red */
+button {
+    background-color: red;
     color: white;
+    border: none;
+    padding: 10px;
     cursor: pointer;
-    border-radius: 4px;
 }
 
-form button:hover {
-    background-color: #e74c3c; /* Lighter red */
+button:hover {
+    background-color: lime;
 }
 
-/* Gallery Section */
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
 }
 
-.image-gallery img {
+.slides {
+    display: none;
+}
+
+.slides img {
     width: 100%;
-    max-width: 300px;
     height: auto;
-    object-fit: cover;
-    border: 1px solid #555;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    transition: transform 0.2s;
 }
 
-.image-gallery img:hover {
-    transform: scale(1.05);
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
-/* Events Section */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .event-calendar {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
-.event-calendar li {
-    padding: 10px 0;
-    color: #ccc; /* Event text color */
-}
-
-.countdown {
-    margin-top: 20px;
-}
-
 .timer {
-    padding: 10px;
+    color: lime;
+    font-size: 1.2em;
     margin: 5px 0;
-    background-color: #444;
-    border: 1px solid #555;
-    border-radius: 4px;
-    text-align: center;
-    color: #fff;
 }
 
-/* Projects Section */
 .progress-bar {
-    margin-bottom: 20px;
+    margin: 10px 0;
 }
 
 .progress {
-    background-color: #444;
-    border-radius: 4px;
+    background-color: #002200;
+    border-radius: 5px;
     overflow: hidden;
 }
 
 .progress-done {
-    background-color: #2ecc71; /* Christmas green */
+    background-color: lime;
     height: 20px;
-    border-radius: 4px 0 0 4px;
+    border-radius: 5px;
+}
+
+.spotify-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spotify-container iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 380px;
 }
