@@ -1,141 +1,127 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    background-color: black;
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-/* Navigation Styles */
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #003300;
+}
+
 .navigation-menu {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: space-around;
-    background-color: #333;
-    margin: 0;
 }
 
 .navigation-menu li {
-    margin: 0;
+    display: inline;
+    margin: 0 10px;
 }
 
 .navigation-menu a {
-    color: white;
+    color: red;
     text-decoration: none;
-    padding: 15px 20px;
-    display: block;
+    font-size: 1.2em;
 }
 
-.navigation-menu a:hover {
-    background-color: #575757;
+h1, h2 {
+    color: red;
 }
 
-/* Section Styles */
-section {
-    padding: 20px;
-    margin: 20px;
-}
-
-/* Home Section */
-#home iframe {
-    width: 100%;
-    max-width: 660px;
-    height: 380px;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Contact Section */
 form {
-    display: flex;
-    flex-direction: column;
+    background-color: #002200;
+    padding: 20px;
+    border-radius: 5px;
 }
 
-form label {
-    margin-top: 10px;
-}
-
-form input,
-form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form button {
-    padding: 10px;
-    border: none;
-    background-color: #333;
+button {
+    background-color: red;
     color: white;
+    border: none;
+    padding: 10px;
     cursor: pointer;
 }
 
-form button:hover {
-    background-color: #575757;
+button:hover {
+    background-color: lime;
 }
 
-/* Gallery Section */
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
 }
 
-.image-gallery img {
+.slides {
+    display: none;
+}
+
+.slides img {
     width: 100%;
-    max-width: 300px;
     height: auto;
-    object-fit: cover;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
 }
 
-.image-gallery img:hover {
-    transform: scale(1.05);
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
-/* Events Section */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .event-calendar {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
-.event-calendar li {
-    padding: 10px 0;
-}
-
-.countdown {
-    margin-top: 20px;
-}
-
 .timer {
-    padding: 10px;
+    color: lime;
+    font-size: 1.2em;
     margin: 5px 0;
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-align: center;
 }
 
-/* Projects Section */
 .progress-bar {
-    margin-bottom: 20px;
+    margin: 10px 0;
 }
 
 .progress {
-    background-color: #f4f4f4;
-    border-radius: 4px;
+    background-color: #002200;
+    border-radius: 5px;
     overflow: hidden;
 }
 
 .progress-done {
-    background-color: #333;
+    background-color: lime;
     height: 20px;
-    border-radius: 4px 0 0 4px;
+    border-radius: 5px;
+}
+
+.spotify-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spotify-container iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 380px;
 }
