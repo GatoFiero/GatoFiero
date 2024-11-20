@@ -1,14 +1,46 @@
-/* Add this to debug colors */
 body {
     background-color: black;
     color: lime;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.navigation-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
     background-color: #003300;
+    padding: 10px 0;
+    margin: 0;
 }
 
-a {
+.navigation-menu a {
     color: red;
     text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navigation-menu a:hover {
+    background-color: #002200;
+    color: lime;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.image-gallery img {
+    max-width: 300px;
+    margin: 10px;
+    border: 2px solid lime;
+    border-radius: 8px;
 }
