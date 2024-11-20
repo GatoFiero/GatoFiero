@@ -1,29 +1,10 @@
-// Highlight active section in navigation
-const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.navigation-menu a');
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navigationMenu = document.querySelector('.navigation-menu');
 
-window.addEventListener('scroll', () => {
-    let currentSection = '';
-
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100; // Offset for header height
-        if (pageYOffset >= sectionTop) {
-            currentSection = section.getAttribute('id');
-        }
+    menuToggle.addEventListener('click', () => {
+        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+        menuToggle.setAttribute('aria-expanded', !isExpanded);
+        navigationMenu.classList.toggle('active');
     });
-
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').substring(1) === currentSection) {
-            link.classList.add('active');
-        }
-    });
-});
-
-// Mobile Menu Toggle
-const menuToggle = document.querySelector('.menu-toggle');
-const navMenu = document.querySelector('.navigation-menu');
-
-menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
 });
