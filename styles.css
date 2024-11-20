@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     background-color: black;
     color: lime;
@@ -12,6 +13,22 @@ h1, h2 {
     margin: 20px 0;
 }
 
+p {
+    line-height: 1.6;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Menu */
 .navigation-menu {
     list-style: none;
     display: flex;
@@ -21,10 +38,13 @@ h1, h2 {
     margin: 0;
 }
 
+.navigation-menu li {
+    margin: 0 10px;
+}
+
 .navigation-menu a {
-    color: red;
-    text-decoration: none;
     padding: 10px 15px;
+    color: red;
 }
 
 .navigation-menu a:hover {
@@ -32,15 +52,161 @@ h1, h2 {
     color: lime;
 }
 
-section {
-    padding: 20px;
-    margin: 20px;
+/* Hero Section */
+#home {
+    padding: 50px 20px;
     text-align: center;
 }
 
+#home iframe {
+    width: 100%;
+    max-width: 660px;
+    height: 380px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 2px solid lime;
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
+}
+
+/* Music Section */
+#music {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#music div {
+    margin: 20px 0;
+}
+
+#music a {
+    color: red;
+}
+
+#music a:hover {
+    color: lime;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
 .image-gallery img {
+    width: 100%;
     max-width: 300px;
-    margin: 10px;
     border: 2px solid lime;
     border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Blog Section */
+#blog {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#blog article {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #002200;
+    color: lime;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+#blog a {
+    color: red;
+}
+
+#blog a:hover {
+    color: lime;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #002200;
+    color: lime;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    background-color: lime;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navigation-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-menu li {
+        margin: 5px 0;
+    }
+
+    #home iframe {
+        height: 250px;
+    }
+
+    #about img {
+        max-width: 150px;
+    }
+
+    .image-gallery img {
+        max-width: 100%;
+    }
+
+    form input, form textarea {
+        width: 90%;
+    }
 }
