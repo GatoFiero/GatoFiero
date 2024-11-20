@@ -1,30 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gato Fiero's Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
 <body>
     <header>
         <nav>
             <ul class="navigation-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#music">Music</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section id="home">
-        <h1>Welcome to Gato Fiero's Website</h1>
+        <h1>Welcome to Gato Fiero's World</h1>
+        <p>Exploring the Edge of Sound and Soul</p>
         <iframe src="https://open.spotify.com/embed/artist/4ukz8Pl0euzsRvqPrPW50q?si=mfP0OhDeRsiiRMWi1F3oZA" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </section>
 
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Gato Fiero is a musical journey through psychotic religious soundscapes. Inspired by... (Add your bio here)</p>
+        <img src="Images/about.jpg" alt="Gato Fiero performing">
+    </section>
+
+    <!-- Music Section -->
+    <section id="music">
+        <h2>My Music</h2>
+        <div class="music-grid">
+            <div class="album">
+                <img src="Images/album1.jpg" alt="Album 1">
+                <h3>Album Title</h3>
+                <a href="https://spotify.com" target="_blank">Listen on Spotify</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Art Gallery Section -->
+    <section id="gallery">
+        <h2>Art Gallery</h2>
+        <div class="image-gallery">
+            <img src="Images/Peruvian-Hairless-Closeup.jpg" alt="A Peruvian Hairless Dog">
+            <img src="Images/da3edd5dc1b844c060019c7411a2dc37.jpg" alt="Unknown">
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Latest Posts</h2>
+        <article>
+            <h3>Post Title</h3>
+            <p>A snippet of your blog post goes here...</p>
+            <a href="post.html">Read More</a>
+        </article>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
         <form action="https://formspree.io/f/xeojglqa" method="POST">
@@ -36,46 +69,5 @@
         </form>
     </section>
 
-    <section id="gallery">
-        <h2>Art Gallery</h2>
-        <div class="image-gallery">
-            <img src="Images/Peruvian-Hairless-Closeup.jpg" alt="A Peruvian Hairless Dog">
-            <img src="Images/da3edd5dc1b844c060019c7411a2dc37.jpg" alt="Unknown">
-            <!-- Add your images here -->
-        </div>
-    </section>
-
-    <section id="events">
-        <h2>Upcoming Events</h2>
-        <ul class="event-calendar">
-            <li>August 16, 2024: Alien: Romulus</li>
-            <li>September 20, 2024: NFC 168</li>
-            <li>November 8, 2024: ONE 169</li>
-        </ul>
-        <div class="countdown">
-            <h3>Countdown to Events:</h3>
-            <div id="countdown1" class="timer">Alien: Romulus</div>
-            <div id="countdown2" class="timer">NFC 168</div>
-            <div id="countdown3" class="timer">ONE 169</div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Project Progress</h2>
-        <div class="progress-bar">
-            <span>Maldoror-Feeding the Holy Spirit: 20%</span>
-            <div class="progress"><div class="progress-done" style="width: 20%;"></div></div>
-        </div>
-        <div class="progress-bar">
-            <span>Untitled Jungle Project: 35%</span>
-            <div class="progress"><div class="progress-done" style="width: 35%;"></div></div>
-        </div>
-        <div class="progress-bar">
-            <span>Untitled Hypnosis Project: 20%</span>
-            <div class="progress"><div class="progress-done" style="width: 20%;"></div></div>
-        </div>
-    </section>
-
     <script src="scripts.js"></script>
 </body>
-</html>
