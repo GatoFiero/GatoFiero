@@ -1,35 +1,72 @@
-<!-- Discography Section -->
-<main>
-    <section id="discography">
-        <h2>Discography</h2>
-        <div class="album-grid">
-            <!-- Album Card Example -->
-            <div class="album-card">
-                <img src="Images/asmeanastheywannabe.png" alt="As Mean As They Wanna Be">
-                <h3>As Mean As They Wanna Be</h3>
-                <p>Released: April 3, 2023</p>
-                <a href="https://open.spotify.com/album/2tRrpWsZeqCGbQKYLJXuWj" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discography - Gato Fiero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the complete discography of Gato Fiero. Listen to all albums.">
+    <!-- Include Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">☰ Menu</button>
+        <nav id="primary-menu">
+            <ul class="navigation-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="discography.html" class="active">Discography</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="ex3.html">EX3</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Discography Section -->
+    <main>
+        <section id="discography">
+            <h2>Discography</h2>
+            <div class="album-grid">
+                <!-- Album Card Example -->
+                <div class="album-card">
+                    <img src="Images/asmeanastheywannabe.png" alt="As Mean As They Wanna Be">
+                    <h3>As Mean As They Wanna Be</h3>
+                    <p>Released: April 3, 2023</p>
+                    <div class="album-buttons">
+                        <a href="https://open.spotify.com/album/2tRrpWsZeqCGbQKYLJXuWj" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
+                        <a href="https://www.youtube.com/playlist?list=PL..." target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                    </div>
+                </div>
+                <!-- Repeat the album-card div for each album -->
+                <!-- Example for additional albums -->
+                <div class="album-card">
+                    <img src="Images/againstallodds.png" alt="Against All Odds">
+                    <h3>Against All Odds</h3>
+                    <p>Released: April 7, 2023</p>
+                    <div class="album-buttons">
+                        <a href="https://open.spotify.com/album/4hLUQgQQHrQ8JZjtBjfkEF" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
+                        <a href="https://www.youtube.com/playlist?list=PL..." target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                    </div>
+                </div>
+                <!-- Add more album cards as needed -->
             </div>
-            <!-- Additional Albums -->
-            <div class="album-card">
-                <img src="Images/againstallodds.png" alt="Against All Odds">
-                <h3>Against All Odds</h3>
-                <p>Released: April 7, 2023</p>
-                <a href="https://open.spotify.com/album/4hLUQgQQHrQ8JZjtBjfkEF" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
-            </div>
-            <div class="album-card">
-                <img src="Images/thanksbutnothanks.png" alt="Thanks But No Thanks">
-                <h3>Thanks But No Thanks</h3>
-                <p>Released: April 16, 2023</p>
-                <a href="https://open.spotify.com/album/7yE7MESutdd3stpXQmYeHm" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
-            </div>
-            <div class="album-card">
-                <img src="Images/idturnbackifiwereyou.png" alt="I'd Turn Back If I Were You">
-                <h3>I'd Turn Back If I Were You</h3>
-                <p>Released: June 21, 2023</p>
-                <a href="https://open.spotify.com/album/4Jl6MRRJ6HdjOAFjbeWvuh" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
-            </div>
-            <!-- Continue adding album cards for all 19 albums -->
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Gato Fiero. All rights reserved.</p>
+        <ul class="social-media">
+            <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+            <!-- Add more social media icons as needed -->
+        </ul>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
