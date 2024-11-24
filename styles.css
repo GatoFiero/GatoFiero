@@ -200,7 +200,41 @@ header {
     border-color: red;
 }
 
-/* ... existing styles ... */
+/* Buy My Music Section */
+#buy-music {
+    background-color: black;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid lime;
+}
+
+#buy-music h2 {
+    color: lime;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#buy-music p {
+    color: lime;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.bandcamp-button {
+    background-color: #003300;
+    color: red;
+    padding: 15px 30px;
+    text-decoration: none;
+    border: 2px solid lime;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bandcamp-button:hover {
+    background-color: #002200;
+    color: lime;
+}
 
 /* EX3 Section */
 #ex3 {
@@ -208,12 +242,6 @@ header {
     padding: 40px 20px;
     text-align: center;
     border-top: 2px solid lime;
-    /* Optional: Uncomment the lines below to add a background image */
-    /* background-image: url('Images/ex3-background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: lime;
-    text-shadow: 1px 1px 2px black; */
 }
 
 #ex3 h2 {
@@ -245,8 +273,6 @@ header {
     box-shadow: 0 0 10px red;
 }
 
-/* ... rest of your styles ... */
-
 /* Blog Section */
 #blog article {
     max-width: 600px;
@@ -267,25 +293,58 @@ header {
     color: lime;
 }
 
-/* Press Quote Section */
-#press-quote {
+/* Press Section */
+#press {
     background-color: black;
     padding: 40px 20px;
     text-align: center;
     border-top: 2px solid lime;
 }
 
-#press-quote blockquote {
-    font-style: italic;
+#press h2 {
     color: lime;
-    margin: 0 auto;
-    max-width: 800px;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-#press-quote cite {
-    display: block;
-    margin-top: 10px;
-    color: red;
+#press p {
+    color: lime;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.press-image {
+    position: relative;
+    display: inline-block;
+    cursor: zoom-in;
+}
+
+.press-image img {
+    max-width: 100%;
+    border: 2px solid lime;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+#expanded-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+    z-index: 10000;
+}
+
+#expanded-img img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px solid lime;
+    border-radius: 5px;
 }
 
 /* Donate Section */
@@ -370,44 +429,75 @@ header {
     margin-bottom: 20px;
 }
 
-#mc_embed_signup form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#mc_embed_signup input.email {
-    padding: 10px;
-    font-size: 1rem;
-    margin-right: 10px;
-    border: 1px solid lime;
-    background-color: #000;
+/* Mailchimp Form Styles */
+#mc_embed_signup {
+    background: black;
     color: lime;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-#mc_embed_signup button {
-    background-color: #003300;
-    color: lime;
-    padding: 10px 20px;
-    border: 1px solid lime;
-    cursor: pointer;
-}
-
-#mc_embed_signup button:hover {
-    background-color: #002200;
-}
-
-#mc_embed_signup .mc-field-group {
+#mc_embed_signup .indicates-required {
+    color: red;
     margin-bottom: 15px;
 }
 
-#mc_embed_signup .required {
+#mc_embed_signup .mc-field-group label {
+    color: lime;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+#mc_embed_signup input {
+    background-color: #000;
+    color: lime;
+    border: 1px solid lime;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#mc_embed_signup input:focus {
+    outline: none;
+    border-color: red;
+}
+
+#mc_embed_signup .button {
+    background-color: #003300;
+    color: lime;
+    border: 1px solid lime;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#mc_embed_signup .button:hover {
+    background-color: #002200;
     color: red;
 }
 
-#mc_embed_signup .mc-submit {
+#mc_embed_signup .asterisk {
+    color: red;
+}
+
+#mc_embed_signup .response {
+    color: red;
+    font-size: 0.9rem;
     margin-top: 10px;
+}
+
+#mc_embed_signup .foot {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #mc_embed_signup {
+        padding: 20px 10px;
+    }
 }
 
 /* Contact Page Styles */
@@ -458,137 +548,6 @@ header {
     background-color: #002200;
 }
 
-/* EX3 Gallery Page Styles */
-#ex3-gallery {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#ex3-gallery h2 {
-    color: lime;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#ex3-gallery .image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-#ex3-gallery .image-gallery img {
-    max-width: 250px;
-    margin: 10px;
-    border: 2px solid lime;
-    border-radius: 5px;
-    transition: transform 0.3s;
-}
-
-#ex3-gallery .image-gallery img:hover {
-    transform: scale(1.05);
-    border-color: red;
-}
-
-/* Discography Section */
-#discography {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#discography h2 {
-    color: lime;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.album-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-
-.album-card {
-    background-color: #000;
-    color: lime;
-    padding: 15px;
-    text-align: center;
-    border: 1px solid lime;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-
-.album-card:hover {
-    transform: scale(1.05);
-    border-color: red;
-}
-
-.album-card img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-.album-card h3 {
-    margin: 10px 0;
-}
-
-.album-card p {
-    margin: 5px 0;
-}
-
-.album-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.album-buttons a {
-    display: inline-flex;
-    align-items: center;
-    background-color: #003300;
-    color: lime;
-    padding: 8px 12px;
-    text-decoration: none;
-    border: 1px solid lime;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    font-size: 0.9rem;
-}
-
-.album-buttons a:hover {
-    background-color: #002200;
-}
-
-.album-buttons a i {
-    margin-right: 5px;
-}
-
-.spotify-button {
-    background-color: #1DB954;
-    border-color: #1DB954;
-    color: #fff;
-}
-
-.spotify-button:hover {
-    background-color: #1AA34A;
-}
-
-.youtube-button {
-    background-color: #FF0000;
-    border-color: #FF0000;
-    color: #fff;
-}
-
-.youtube-button:hover {
-    background-color: #CC0000;
-}
-
 /* Footer Section */
 footer {
     text-align: center;
@@ -632,7 +591,7 @@ footer .social-media a:hover {
 
     #mission,
     #ex3,
-    #press-quote,
+    #press,
     #donate,
     #mailing-list {
         padding: 30px 10px;
@@ -660,21 +619,9 @@ footer .social-media a:hover {
         padding: 8px 16px;
     }
 
-    #ex3-gallery .image-gallery img {
+    .image-gallery img {
         max-width: 100%;
         margin: 5px;
     }
-
-    .album-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .album-card {
-        padding: 10px;
-    }
-
-    .album-buttons a {
-        padding: 6px 10px;
-        font-size: 0.8rem;
-    }
 }
+
