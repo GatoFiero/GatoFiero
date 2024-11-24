@@ -488,6 +488,63 @@ footer .social-media a:hover {
     border-color: red;
 }
 
+/* Discography Page Styles */
+#discography {
+    background-color: black;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#discography h2 {
+    color: lime;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.album-card {
+    background-color: #000;
+    color: lime;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid lime;
+}
+
+.album-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.album-card h3 {
+    margin: 10px 0;
+}
+
+.album-card p {
+    margin: 5px 0;
+}
+
+.album-card a {
+    color: red;
+    text-decoration: none;
+}
+
+.album-card a:hover {
+    color: lime;
+}
+
+@media (max-width: 768px) {
+    .album-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Adjustments for Smaller Screens */
 @media (max-width: 768px) {
     #home {
@@ -532,5 +589,13 @@ footer .social-media a:hover {
     #ex3-gallery .image-gallery img {
         max-width: 100%;
         margin: 5px;
+    }
+
+    .album-card {
+        padding: 10px;
+    }
+
+    .album-card img {
+        margin-bottom: 10px;
     }
 }
