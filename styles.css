@@ -200,12 +200,20 @@ header {
     border-color: red;
 }
 
+/* ... existing styles ... */
+
 /* EX3 Section */
 #ex3 {
     background-color: black;
     padding: 40px 20px;
     text-align: center;
     border-top: 2px solid lime;
+    /* Optional: Uncomment the lines below to add a background image */
+    /* background-image: url('Images/ex3-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: lime;
+    text-shadow: 1px 1px 2px black; */
 }
 
 #ex3 h2 {
@@ -228,13 +236,16 @@ header {
     border: 2px solid lime;
     border-radius: 8px;
     font-size: 1.2rem;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 .ex3-button:hover {
     background-color: #002200;
     color: lime;
+    box-shadow: 0 0 10px red;
 }
+
+/* ... rest of your styles ... */
 
 /* Blog Section */
 #blog article {
