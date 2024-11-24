@@ -149,6 +149,66 @@ header {
     color: lime;
 }
 
+/* Donate Section */
+#donate {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid lime;
+}
+
+#donate h2 {
+    color: lime;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#donate p {
+    color: lime;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.donation-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0 20px;
+}
+
+.donate-button {
+    background-color: #003300;
+    color: red;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid lime;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.donate-button:hover {
+    background-color: #002200;
+    color: lime;
+}
+
+.donate-button:active {
+    background-color: #001100;
+}
+
+@media (max-width: 768px) {
+    .donation-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .donate-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
 /* Contact Section */
 #contact form {
     max-width: 600px;
