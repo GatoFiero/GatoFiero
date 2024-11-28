@@ -287,6 +287,10 @@ header {
 
 #blog .read-more {
     color: red;
+    /* New Style for Read More Links */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 #blog .read-more:hover {
@@ -740,3 +744,18 @@ footer .social-media a:hover {
     }
 }
 
+/* New Styles Added */
+
+/* Read More Link Styles in Blog Section */
+#blog .read-more {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#blog .read-more:hover {
+    color: lime;
+}
+
+/* End of New Styles */
