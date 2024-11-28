@@ -11,7 +11,7 @@
     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
     <!-- Your custom styles -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Lightbox CSS (Optional for image overlay) -->
+    <!-- Lightbox CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 </head>
 <body>
@@ -23,7 +23,7 @@
                 <li><a href="index.html#home">Home</a></li>
                 <li><a href="about.html">Who is Gato Fiero?</a></li>
                 <li><a href="discography.html">Discography</a></li>
-                <li><a href="photogallery.html" class="active">Photo Gallery</a></li> <!-- Active Link -->
+                <li><a href="photogallery.html" class="active">Photo Gallery</a></li>
                 <li><a href="ex3.html">EX3</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="testimonials.html">Testimonials</a></li>
@@ -37,10 +37,10 @@
         <h1>Photo Gallery</h1>
         <div class="image-gallery">
             <a href="Images/photo1_large.jpg" data-lightbox="gallery" data-title="Description of Photo 1">
-                <img src="Images/photo1_thumb.jpg" alt="Photo 1">
+                <img src="Images/photo1_thumb.jpg" alt="Photo 1" loading="lazy">
             </a>
             <a href="Images/photo2_large.jpg" data-lightbox="gallery" data-title="Description of Photo 2">
-                <img src="Images/photo2_thumb.jpg" alt="Photo 2">
+                <img src="Images/photo2_thumb.jpg" alt="Photo 2" loading="lazy">
             </a>
             <!-- Add more images as needed -->
         </div>
@@ -60,7 +60,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Mailchimp Validation Script -->
     <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <!-- Lightbox JS (Optional) -->
+    <!-- Lightbox JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     <!-- Your own scripts -->
     <script src="scripts.js"></script>
