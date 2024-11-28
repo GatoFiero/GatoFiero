@@ -2,33 +2,165 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Discography - Gato Fiero</title>
+    <title>Discography - Gato Fiero's Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the complete discography of Gato Fiero. Listen to all albums.">
+    <meta name="description" content="Explore the complete discography of Gato Fiero. Listen to all albums and discover detailed tracklists.">
     <!-- Include Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Include Mailchimp's CSS -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <!-- Slick Carousel CSS (if used) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <!-- Link to your styles.css -->
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Specific styles for Discography Page if needed */
+        main#discography {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #101010;
+            border: 1px solid lime;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        main#discography h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: lime;
+        }
+
+        .album-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .album-card {
+            background-color: #1a1a1a;
+            border: 2px solid lime;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .album-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .album-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+            color: lime;
+        }
+
+        .album-card p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            text-align: center;
+            color: lime;
+        }
+
+        .album-buttons {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 10px;
+        }
+
+        .album-buttons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s, color 0.3s;
+            text-decoration: none;
+            color: red;
+            border: 2px solid lime;
+        }
+
+        .album-buttons a:hover,
+        .album-buttons a:focus {
+            background-color: lime;
+            color: #101010;
+        }
+
+        .spotify-button {
+            background-color: #1DB954; /* Spotify green */
+            color: white;
+        }
+
+        .youtube-button {
+            background-color: #FF0000; /* YouTube red */
+            color: white;
+        }
+
+        .details-button {
+            background-color: #555555; /* Neutral color for details */
+            color: white;
+        }
+
+        .details-button:hover,
+        .details-button:focus {
+            background-color: lime;
+            color: #101010;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .album-buttons {
+                flex-direction: column;
+            }
+
+            .album-buttons a {
+                font-size: 0.9rem;
+                padding: 8px 0;
+            }
+
+            main#discography {
+                padding: 15px;
+                margin: 20px auto;
+            }
+
+            main#discography h2 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Menu -->
     <header>
-        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">☰ Menu</button>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰ Menu</button>
         <nav id="primary-menu">
             <ul class="navigation-menu">
                 <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
+                <li><a href="whoisgatofiero.html">Who is Gato Fiero?</a></li>
                 <li><a href="discography.html" class="active">Discography</a></li>
-                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="photogallery.html">Photo Gallery</a></li>
                 <li><a href="ex3.html">EX3</a></li>
-                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Discography Section -->
-    <main>
+    <main id="discography">
         <section id="discography">
             <h2>Discography</h2>
             <div class="album-grid">
@@ -40,6 +172,7 @@
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/album/2tRrpWsZeqCGbQKYLJXuWj" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
                         <a href="https://www.youtube.com/playlist?list=OLAK5uy_k1342PCPaSnAVr5Rurdi6XJSZt5nprxnw" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="asmeanastheywannabe.html" class="details-button" aria-label="Tracklist and Details for As Mean As They Wanna Be">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Album 2 -->
@@ -50,6 +183,7 @@
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/album/4hLUQgQQHrQ8JZjtBjfkEF" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
                         <a href="https://youtube.com/playlist?list=OLAK5uy_mWpro6L4J8oDziW3TmcHGL5LfBPnmldTU&si=8mO23WUdwsSBWAx3" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="againstallodds.html" class="details-button" aria-label="Tracklist and Details for Against All Odds">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Album 3 -->
@@ -60,6 +194,7 @@
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/album/7yE7MESutdd3stpXQmYeHm" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
                         <a href="https://youtube.com/playlist?list=OLAK5uy_ny3aNFtML_Z6nk8zmN5xpEvrn2qbC4-Tk&si=zYrIwLIwk1UCsWfH" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="thanksbutnothanks.html" class="details-button" aria-label="Tracklist and Details for Thanks But No Thanks">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Album 4 -->
@@ -70,6 +205,7 @@
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/album/4Jl6MRRJ6HdjOAFjbeWvuh" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
                         <a href="https://youtube.com/playlist?list=OLAK5uy_k34ezoCfT6B_m0IFEgH9F0chk10tkYbNI&si=u6EO03682r0HXIQu" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="idturnbackifiwereyou.html" class="details-button" aria-label="Tracklist and Details for I'd Turn Back If I Were You">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Album 5 -->
@@ -80,6 +216,7 @@
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/album/2qcHuHhSVDzEgl88DvOa98?si=9k7ti78nS0CnWxP5Os3L1g" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
                         <a href="https://youtube.com/playlist?list=OLAK5uy_lDszq_e_kJ_3H3zAZkClFlW0JV5xKCJRo&si=-9WRZBe5pXnpVPaT" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="downwarddog.html" class="details-button" aria-label="Tracklist and Details for Downward Dog">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Album 6 -->
@@ -90,6 +227,7 @@
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/album/3PjbVbZpdG9Om2JHnZ1N97?si=ISYRgN8FRCORwwiD5g3oOQ" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
                         <a href="https://youtube.com/playlist?list=OLAK5uy_lfzOxPfKwvCkaCOA_5vapkVbCx8AqYh3U&si=kZvtBljasWaYR7St" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="imnotanxiousyouare.html" class="details-button" aria-label="Tracklist and Details for I'm Not Anxious, You Are!">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Album 7 -->
@@ -99,7 +237,8 @@
                     <p>Released: August 11, 2023</p>
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/album/6MFRBodhBamamJsJUNDqMC?si=iJeNFJnvSlKUdiCQzGzCMg" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
-                        <a href="https://youtube.com/playlist?list=OLAK5uy_nAUXbQRNIUj9BqeDGM5_iyLKwCsDw98Pk&si=APqk1da6JOkefkB4" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="https://youtube.com/playlist?list=OLAK5uy_nAUXbQRNIUj9BqeDGM5_iyLKwCsDw98Pk&si=peTxIW-ANBdBnVlA" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="losingmyattentionfast.html" class="details-button" aria-label="Tracklist and Details for Losing My Attention Fast">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Album 8 -->
@@ -110,6 +249,7 @@
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/album/3tifpA7lrWhDGRfvjECfk4?si=L0OZMxIMRBW7BI8OvfO4ag" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
                         <a href="https://youtube.com/playlist?list=OLAK5uy_nSHTznHUoMbwZhGzyRw92UiLaPuKXz44o&si=UQ1zm3wMbt3Z9HRx" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="sorrynotsorry.html" class="details-button" aria-label="Tracklist and Details for Sorry Not Sorry">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Album 9 -->
@@ -120,6 +260,7 @@
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/album/5LN5Y7YHDUPyxUXkP6OZTW?si=T2krw44qQ_-P_eP__73C-Q" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
                         <a href="https://youtube.com/playlist?list=OLAK5uy_mD5wTrydOo7hrE0NTYltLmG9ifB19XVlw&si=iMBmQuMaKYok_9ot" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="dogwillhunt.html" class="details-button" aria-label="Tracklist and Details for Dog Will Hunt">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Album 10 -->
@@ -130,6 +271,7 @@
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/album/4M0Dw9JM3UzHwDe5vnxKE6?si=i9K-vQp9RYKVsLGoCT41ew" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
                         <a href="https://youtube.com/playlist?list=OLAK5uy_nEl6Fil9kc7sODg65ZKP2TW0RTrXvZaVI&si=j_ZLxunl6WVhd-BG" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="catgotyourtongue.html" class="details-button" aria-label="Tracklist and Details for Cat Got Your Tongue">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Album 11 -->
@@ -140,6 +282,7 @@
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/album/2lfYh5SII0FtkgsHq2hwE3?si=Y1OHNEIIR0WmOPHbcF9Y8Q" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
                         <a href="https://youtube.com/playlist?list=OLAK5uy_ldSczA6hI1XPCmtY5T9CDu1DREFpqqt88&si=nMrQbNmb3CwGhK-j" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="todielikeadog.html" class="details-button" aria-label="Tracklist and Details for To Die Like a Dog">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Album 12 -->
@@ -148,8 +291,9 @@
                     <h3>Dogs Of War</h3>
                     <p>Released: January 20, 2024</p>
                     <div class="album-buttons">
-                        <a href="https://open.spotify.com/album/44CjrlWO43mVvsSKhU8P5M?si=B_wn2EUuQAyW1WGQHKtO6g" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
+                        <a href="https://open.spotify.com/album/5fqKUMFM181orC1btEJ3xM?si=9sprX5CvRXaOtaBeq00DDg" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
                         <a href="https://youtube.com/playlist?list=OLAK5uy_kLEnUkCCUsZRCpSw-hjfaOqVchkx9n2NE&si=peTxIW-ANBdBnVlA" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="dogsofwar.html" class="details-button" aria-label="Tracklist and Details for Dogs Of War">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Album 13 -->
@@ -160,6 +304,7 @@
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/album/7vLzCDXnPPX1qcPWDCHigx?si=cKvFyuPUTYSiFO2RV75zbQ" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
                         <a href="https://youtube.com/playlist?list=OLAK5uy_k_Ad6ZscmRv-Zz-133MBfFLLv-cGNuMHQ&si=S8k4Rtkgl4k8bntG" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="dragonfliesinmyhead.html" class="details-button" aria-label="Tracklist and Details for Dragonflies in My Head">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Album 14 -->
@@ -170,6 +315,7 @@
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/album/5nme8RxZOB7xRzBMrfZBQm?si=MTm7IUryTCqeVs-7M8dK0Q" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
                         <a href="https://youtube.com/playlist?list=OLAK5uy_ncKv0TTH79fVbP0nqGZaUgDJMVhmWKCWg&si=5wZ34xU2ZCp8XhNZ" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="deadcatbounce.html" class="details-button" aria-label="Tracklist and Details for Dead Cat Bounce">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Album 15 -->
@@ -180,6 +326,7 @@
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/album/5fqKUMFM181orC1btEJ3xM?si=9sprX5CvRXaOtaBeq00DDg" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
                         <a href="https://youtube.com/playlist?list=OLAK5uy_l4AG_KDflPNWDm3i2HXKTGhogyUOufAFM&si=Z9ECJCgnoS-U5zLz" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="dogfight.html" class="details-button" aria-label="Tracklist and Details for Dog Fight">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Album 16 -->
@@ -189,7 +336,8 @@
                     <p>Released: April 5, 2024</p>
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/album/10gsrnD7n5MbqxdfgdUYDQ?si=NwN789JxR928KSSfkvekjQ" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
-                        <a href="https://youtube.com/playlist?list=OLAK5uy_kMf_r651QEgZTUjXLPUxlDsmWNOuacjR8&si=hdPzbEBH1j3UqSZP" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="https://youtube.com/playlist?list=OLAK5uy_kMf_r651QEgZTUjXLPUxlDsmWNOuacjR8&si=pg5g5s-vfccJwzAn" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="inyourface.html" class="details-button" aria-label="Tracklist and Details for In Your Face">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Album 17 -->
@@ -200,6 +348,7 @@
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/album/0UrfApGZtfG5wZjj1z57Us?si=r7a_EJ0MSxehNy91dyyGOQ" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
                         <a href="https://youtube.com/playlist?list=OLAK5uy_mhBwaPxPn5ATdFL5A-W0SYCFtL_iaMldU&si=nKUw0FEUzzjnFLP8" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="nevertheless.html" class="details-button" aria-label="Tracklist and Details for Nevertheless">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Album 18 -->
@@ -210,9 +359,10 @@
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/album/6YieeiLEFLaXjDdRYSPDkS?si=Jud3hC9ZR6eWGUQvgKzm9g" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
                         <a href="https://youtube.com/playlist?list=OLAK5uy_lCliC-ythGPly5o81frAChgTiN1NSrsVM&si=pg5g5s-vfccJwzAn" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="emanation.html" class="details-button" aria-label="Tracklist and Details for Emanation">Tracklist &amp; Details</a>
                     </div>
                 </div>
-                      <!-- Album 19 -->
+                <!-- Album 19 -->
                 <div class="album-card">
                     <img src="Images/asliceofthepainfulpie.png" alt="A Slice of the Painful Pie">
                     <h3>A Slice of the Painful Pie</h3>
@@ -220,6 +370,7 @@
                     <div class="album-buttons">
                         <a href="https://open.spotify.com/" target="_blank" class="spotify-button"><i class="fab fa-spotify"></i> Spotify</a>
                         <a href="https://youtube.com/" target="_blank" class="youtube-button"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="asliceofthepainfulpie.html" class="details-button" aria-label="Tracklist and Details for A Slice of the Painful Pie">Tracklist &amp; Details</a>
                     </div>
                 </div>
                 <!-- Add more album cards as needed -->
@@ -231,13 +382,54 @@
     <footer>
         <p>&copy; 2023 Gato Fiero. All rights reserved.</p>
         <ul class="social-media">
-            <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://instagram.com/elverdaderogatofiero" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Follow on X"><i class="fab fa-twitter"></i> X</a></li>
+            <li><a href="https://instagram.com/elverdaderogatofiero" target="_blank" rel="noopener noreferrer" aria-label="Follow on Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://tiktok.com/@yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Follow on TikTok"><i class="fab fa-tiktok"></i> TikTok</a></li>
+            <li><a href="https://facebook.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://wa.me/yourwhatsappnumber" target="_blank" rel="noopener noreferrer" aria-label="Connect on WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+            <li><a href="https://spotify.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Listen on Spotify"><i class="fab fa-spotify"></i> Spotify</a></li>
+            <li><a href="https://youtube.com/yourchannel" target="_blank" rel="noopener noreferrer" aria-label="Subscribe on YouTube"><i class="fab fa-youtube"></i> YouTube</a></li>
             <!-- Add more social media icons as needed -->
         </ul>
     </footer>
 
-    <!-- Include jQuery if needed -->
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Mailchimp Validation Script -->
+    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <!-- Slick Carousel JS (if used) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Your own scripts -->
     <script src="scripts.js"></script>
+    <!-- Initialize Slick Carousel (if used) -->
+    <script>
+        $(document).ready(function(){
+            // Initialize Slick Carousel for album-slider if needed
+            // Uncomment the following lines if you plan to add a carousel to the discography
+            /*
+            $('.album-grid').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+            */
+        });
+    </script>
 </body>
 </html>
