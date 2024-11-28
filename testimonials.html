@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testimonials - Gato Fiero's Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read testimonials from fans and collaborators of Gato Fiero.">
+    <!-- Include Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Include Mailchimp's CSS -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Slick Carousel CSS (Optional for testimonials slider) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation menu">☰ Menu</button>
+        <nav id="primary-menu">
+            <ul class="navigation-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="about.html">Who is Gato Fiero?</a></li>
+                <li><a href="discography.html">Discography</a></li>
+                <li><a href="photogallery.html">Photo Gallery</a></li>
+                <li><a href="ex3.html">EX3</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="testimonials.html" class="active">Testimonials</a></li> <!-- Active Link -->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Testimonials Section -->
+    <section id="testimonials-page">
+        <h1>Testimonials</h1>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <p>"Gato Fiero's music has transformed my life. Truly inspiring!"</p>
+                <h3>- Jane Doe</h3>
+            </div>
+            <div class="testimonial">
+                <p>"An exceptional artist whose work resonates deeply."</p>
+                <h3>- John Smith</h3>
+            </div>
+            <div class="testimonial">
+                <p>"The creativity and passion are evident in every piece."</p>
+                <h3>- Emily Johnson</h3>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Gato Fiero. All rights reserved.</p>
+        <ul class="social-media">
+            <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+            <!-- Add more social media icons as needed -->
+        </ul>
+    </footer>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Mailchimp Validation Script -->
+    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <!-- Slick Carousel JS (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Your own scripts -->
+    <script src="scripts.js"></script>
+    <!-- Initialize Slick Carousel -->
+    <script>
+        $(document).ready(function(){
+            $('.testimonial-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: true
+            });
+        });
+    </script>
+</body>
+</html>
