@@ -2,26 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Photo Gallery - Gato Fiero's Website</title>
+    <title>Photo Gallery - Gato Fiero</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the photo gallery of Gato Fiero's artistic journey.">
-    <!-- Include Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Include Mailchimp's CSS -->
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-    <!-- Your custom styles -->
+    <!-- Link to your styles.css -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Lightbox CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Navigation Menu -->
     <header>
-        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation menu">☰ Menu</button>
-        <nav id="primary-menu">
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰ Menu</button>
+        <nav>
             <ul class="navigation-menu">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="about.html">Who is Gato Fiero?</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="whoisgatofiero.html">Who is Gato Fiero?</a></li>
                 <li><a href="discography.html">Discography</a></li>
                 <li><a href="photogallery.html" class="active">Photo Gallery</a></li>
                 <li><a href="ex3.html">EX3</a></li>
@@ -33,15 +28,13 @@
     </header>
 
     <!-- Photo Gallery Section -->
-    <section id="photogallery-page">
+    <section id="photogallery">
         <h1>Photo Gallery</h1>
         <div class="image-gallery">
-            <a href="Images/photo1_large.jpg" data-lightbox="gallery" data-title="Description of Photo 1">
-                <img src="Images/photo1_thumb.jpg" alt="Photo 1" loading="lazy">
-            </a>
-            <a href="Images/photo2_large.jpg" data-lightbox="gallery" data-title="Description of Photo 2">
-                <img src="Images/photo2_thumb.jpg" alt="Photo 2" loading="lazy">
-            </a>
+            <img src="Images/gallery1.jpg" alt="Gallery Image 1">
+            <img src="Images/gallery2.jpg" alt="Gallery Image 2">
+            <img src="Images/gallery3.jpg" alt="Gallery Image 3">
+            <img src="Images/gallery4.jpg" alt="Gallery Image 4">
             <!-- Add more images as needed -->
         </div>
     </section>
@@ -50,19 +43,21 @@
     <footer>
         <p>&copy; 2023 Gato Fiero. All rights reserved.</p>
         <ul class="social-media">
-            <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
-            <!-- Add more social media icons as needed -->
+            <li><a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://instagram.com/yourhandle" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://facebook.com/yourhandle" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://tiktok.com/@yourhandle" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+            <li><a href="https://wa.me/yourwhatsappnumber" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+            <!-- Add more social media links as needed -->
         </ul>
     </footer>
 
-    <!-- Include jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Mailchimp Validation Script -->
-    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <!-- Lightbox JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-    <!-- Your own scripts -->
-    <script src="scripts.js"></script>
+    <!-- JavaScript for Navigation Toggle -->
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.navigation-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
