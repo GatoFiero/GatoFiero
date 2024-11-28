@@ -14,15 +14,75 @@
     <!-- Slick Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        /* Additional styling for Testimonials page if needed */
+        main#testimonials {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #101010;
+            border: 1px solid lime;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        main#testimonials h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: lime;
+        }
+
+        .testimonial-slider {
+            margin-top: 20px;
+        }
+
+        .testimonial {
+            text-align: center;
+            padding: 20px;
+            color: lime;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .testimonial h3 {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Responsive adjustments if needed */
+        @media (max-width: 768px) {
+            main#testimonials {
+                padding: 15px;
+            }
+
+            .navigation-menu {
+                flex-direction: column;
+                align-items: center;
+                display: none;
+            }
+
+            .navigation-menu.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Menu -->
     <header>
-        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation menu">☰ Menu</button>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰ Menu</button>
         <nav id="primary-menu">
             <ul class="navigation-menu">
                 <li><a href="index.html#home">Home</a></li>
-                <li><a href="about.html">Who is Gato Fiero?</a></li>
+                <li><a href="whoisgatofiero.html">Who is Gato Fiero?</a></li>
                 <li><a href="discography.html">Discography</a></li>
                 <li><a href="photogallery.html">Photo Gallery</a></li>
                 <li><a href="ex3.html">EX3</a></li>
@@ -34,32 +94,38 @@
     </header>
 
     <!-- Testimonials Section -->
-    <section id="testimonials-page">
-        <h1>Testimonials</h1>
-        <div class="testimonial-slider">
-            <div class="testimonial">
-                <p>"Gato Fiero's music has transformed my life. Truly inspiring!"</p>
-                <h3>- Jane Doe</h3>
+    <main id="testimonials">
+        <section id="testimonials-page">
+            <h1>Testimonials</h1>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"Gato Fiero's music has transformed my life. Truly inspiring!"</p>
+                    <h3>- Jane Doe</h3>
+                </div>
+                <div class="testimonial">
+                    <p>"An exceptional artist whose work resonates deeply."</p>
+                    <h3>- John Smith</h3>
+                </div>
+                <div class="testimonial">
+                    <p>"The creativity and passion are evident in every piece."</p>
+                    <h3>- Emily Johnson</h3>
+                </div>
+                <!-- Add more testimonials as needed -->
             </div>
-            <div class="testimonial">
-                <p>"An exceptional artist whose work resonates deeply."</p>
-                <h3>- John Smith</h3>
-            </div>
-            <div class="testimonial">
-                <p>"The creativity and passion are evident in every piece."</p>
-                <h3>- Emily Johnson</h3>
-            </div>
-            <!-- Add more testimonials as needed -->
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2023 Gato Fiero. All rights reserved.</p>
         <ul class="social-media">
-            <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
-            <!-- Add more social media icons as needed -->
+            <li><a href="#" aria-label="Follow on X"><i class="fab fa-twitter"></i> X</a></li> <!-- Replace '#' with your X profile URL -->
+            <li><a href="#" aria-label="Follow on Instagram"><i class="fab fa-instagram"></i> Instagram</a></li> <!-- Replace '#' with your Instagram profile URL -->
+            <li><a href="#" aria-label="Follow on TikTok"><i class="fab fa-tiktok"></i> TikTok</a></li> <!-- Replace '#' with your TikTok profile URL -->
+            <li><a href="#" aria-label="Follow on Facebook"><i class="fab fa-facebook"></i> Facebook</a></li> <!-- Replace '#' with your Facebook profile URL -->
+            <li><a href="#" aria-label="Connect on WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a></li> <!-- Replace '#' with your WhatsApp link -->
+            <li><a href="#" aria-label="Listen on Spotify"><i class="fab fa-spotify"></i> Spotify</a></li> <!-- Replace '#' with your Spotify profile URL -->
+            <li><a href="#" aria-label="Subscribe on YouTube"><i class="fab fa-youtube"></i> YouTube</a></li> <!-- Replace '#' with your YouTube channel URL -->
         </ul>
     </footer>
 
@@ -82,7 +148,9 @@
                 adaptiveHeight: true,
                 autoplay: true,
                 autoplaySpeed: 4000,
-                arrows: true
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev" aria-label="Previous testimonial">Previous</button>',
+                nextArrow: '<button type="button" class="slick-next" aria-label="Next testimonial">Next</button>'
             });
         });
     </script>
