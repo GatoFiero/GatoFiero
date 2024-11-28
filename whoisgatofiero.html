@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Gato Fiero</title>
+    <title>Who is Gato Fiero? - Gato Fiero's Website</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Improved styling for the About page */
-        main#about {
+        /* Improved styling for the Who is Gato Fiero? page */
+        main#whoisgatofiero {
             max-width: 800px;
             margin: 40px auto;
             padding: 20px;
@@ -17,48 +17,91 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
         }
 
-        main#about h1 {
+        main#whoisgatofiero h1 {
             font-size: 2rem;
             margin-bottom: 20px;
             text-align: center;
             color: lime;
         }
 
-        main#about img {
+        main#whoisgatofiero img {
             display: block;
             margin: 20px auto;
             max-width: 100%;
             border-radius: 10px;
+            border: 2px solid lime;
         }
 
-        main#about p {
+        main#whoisgatofiero p {
             line-height: 1.8;
             margin-bottom: 20px;
             text-align: justify;
             color: lime;
         }
 
-        main#about strong {
+        main#whoisgatofiero strong {
             display: block;
             margin-top: 20px;
             text-align: center;
             font-size: 1.1rem;
             color: red;
         }
+
+        /* Updated Footer Styles */
+        footer {
+            background-color: #101010;
+            color: lime;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid lime;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        footer ul.social-media {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 0;
+        }
+
+        footer ul.social-media li {
+            margin: 0;
+        }
+
+        footer ul.social-media a {
+            color: red;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer ul.social-media a:hover {
+            color: lime;
+        }
     </style>
 </head>
 <body>
     <header>
-        <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰ Menu</button>
         <ul class="navigation-menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="whoisgatofiero.html" class="active">Who is Gato Fiero?</a></li>
             <li><a href="discography.html">Discography</a></li>
+            <li><a href="photogallery.html">Photo Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </header>
 
-    <main id="about">
+    <main id="whoisgatofiero">
         <h1>The Enigma of Gato Fiero: How One Artist Helped Ray Finkle Transform Pain into Clarity</h1>
         <img src="gato_fiero_image.jpg" alt="Gato Fiero" />
         <p>Gato Fiero, an instrumental artist shrouded in anonymity, has sparked deep emotional connections with listeners, none more profound than with Ray Finkle. Once a celebrated football kicker, Finkle's public life unraveled following a missed championship kick in 1984, plunging him into isolation and despair. In this void, Finkle discovered the transformative power of Fiero’s music—wordless compositions that offered not answers but a canvas for reflection.</p>
@@ -83,9 +126,13 @@
     <footer>
         <p>&copy; 2023 Gato Fiero</p>
         <ul class="social-media">
-            <li><a href="#" aria-label="Follow on Twitter">T</a></li>
-            <li><a href="#" aria-label="Follow on Instagram">I</a></li>
-            <li><a href="#" aria-label="Follow on Facebook">F</a></li>
+            <li><a href="#" aria-label="Follow on X"><i class="fab fa-x"></i></a></li>
+            <li><a href="#" aria-label="Follow on Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" aria-label="Follow on TikTok"><i class="fab fa-tiktok"></i></a></li>
+            <li><a href="#" aria-label="Follow on Facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" aria-label="Connect on WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="#" aria-label="Listen on Spotify"><i class="fab fa-spotify"></i></a></li>
+            <li><a href="#" aria-label="Subscribe on YouTube"><i class="fab fa-youtube"></i></a></li>
         </ul>
     </footer>
 
