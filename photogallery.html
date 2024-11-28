@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery - Gato Fiero's Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the photo gallery of Gato Fiero's artistic journey.">
+    <!-- Include Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Include Mailchimp's CSS -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lightbox CSS (Optional for image overlay) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation menu">☰ Menu</button>
+        <nav id="primary-menu">
+            <ul class="navigation-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="about.html">Who is Gato Fiero?</a></li>
+                <li><a href="discography.html">Discography</a></li>
+                <li><a href="photogallery.html" class="active">Photo Gallery</a></li> <!-- Active Link -->
+                <li><a href="ex3.html">EX3</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Photo Gallery Section -->
+    <section id="photogallery-page">
+        <h1>Photo Gallery</h1>
+        <div class="image-gallery">
+            <a href="Images/photo1_large.jpg" data-lightbox="gallery" data-title="Description of Photo 1">
+                <img src="Images/photo1_thumb.jpg" alt="Photo 1">
+            </a>
+            <a href="Images/photo2_large.jpg" data-lightbox="gallery" data-title="Description of Photo 2">
+                <img src="Images/photo2_thumb.jpg" alt="Photo 2">
+            </a>
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Gato Fiero. All rights reserved.</p>
+        <ul class="social-media">
+            <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+            <!-- Add more social media icons as needed -->
+        </ul>
+    </footer>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Mailchimp Validation Script -->
+    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <!-- Lightbox JS (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!-- Your own scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>
