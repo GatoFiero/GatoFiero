@@ -1,47 +1,84 @@
-/* Global Styles */
+/* =====================================================
+   1. General Styles
+   ===================================================== */
+
+/* Reset some default styles */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: black;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #000;
     color: lime;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2, h3 {
-    text-align: center;
-    margin: 20px 0;
-}
-
-p {
     line-height: 1.6;
-    text-align: center;
-    margin: 10px 20px;
+    font-size: 16px;
 }
 
+/* Link Styles */
 a {
     color: red;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-a:hover {
+a:hover,
+a:focus {
+    color: lime;
     text-decoration: underline;
 }
 
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: lime;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: red;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+    color: lime;
+    line-height: 1.8;
+}
+
+/* Images */
 img {
     max-width: 100%;
     height: auto;
+    display: block;
+    border-radius: 10px;
+    border: 2px solid lime;
+    margin: 20px auto;
 }
 
-/* Navigation Menu */
+/* =====================================================
+   2. Header and Navigation Menu
+   ===================================================== */
+
 header {
+    background-color: #003300;
+    padding: 10px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #003300;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -54,697 +91,304 @@ header {
     text-align: center;
     font-size: 1.2rem;
     border: none;
-    width: 100%;
 }
 
 .navigation-menu {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 10px 0;
-    margin: 0;
+    align-items: center;
 }
 
 .navigation-menu li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .navigation-menu a {
     padding: 10px 15px;
     color: red;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
 }
 
-.navigation-menu a:hover {
+.navigation-menu a:hover,
+.navigation-menu a:focus {
+    color: lime;
+    border-bottom: 2px solid lime;
+}
+
+.navigation-menu a.active {
+    color: lime;
+    border-bottom: 2px solid lime;
+}
+
+/* =====================================================
+   3. Button Styles
+   ===================================================== */
+
+button,
+a.button,
+a.hero-button,
+a.donate-button,
+a.bandcamp-button,
+a.ex3-button {
+    display: inline-block;
+    background-color: #003300;
+    color: red;
+    padding: 12px 25px;
+    border: 2px solid lime;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover,
+a.button:hover,
+a.hero-button:hover,
+a.donate-button:hover,
+a.bandcamp-button:hover,
+a.ex3-button:hover {
     background-color: #002200;
     color: lime;
 }
 
-.navigation-menu a.active {
-    border-bottom: 2px solid lime;
+button:active,
+a.button:active,
+a.hero-button:active,
+a.donate-button:active,
+a.bandcamp-button:active,
+a.ex3-button:active {
+    background-color: #001100;
+}
+
+/* =====================================================
+   4. Main Content Sections
+   ===================================================== */
+
+/* Who is Gato Fiero? Page */
+main#whoisgatofiero {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #101010;
+    border: 1px solid lime;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+main#whoisgatofiero h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
     color: lime;
 }
 
-/* Mobile Navigation Menu */
+main#whoisgatofiero img {
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid lime;
+}
+
+main#whoisgatofiero p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: lime;
+}
+
+main#whoisgatofiero strong {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: red;
+}
+
+/* Testimonials Page */
+main#testimonials {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #101010;
+    border: 1px solid lime;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+main#testimonials h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: lime;
+}
+
+.testimonial-slider {
+    margin-top: 20px;
+}
+
+.testimonial {
+    text-align: center;
+    padding: 20px;
+    color: lime;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.testimonial h3 {
+    color: red;
+    font-weight: bold;
+}
+
+/* =====================================================
+   5. Slick Carousel Overrides
+   ===================================================== */
+
+/* Customize Slick dots */
+.slick-dots li button:before {
+    color: red;
+}
+
+.slick-dots li.slick-active button:before {
+    color: lime;
+}
+
+/* Customize Slick arrows */
+.slick-prev,
+.slick-next {
+    background-color: #003300;
+    border: none;
+    color: lime;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: #002200;
+    color: red;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 1rem;
+}
+
+/* =====================================================
+   6. Footer Styles
+   ===================================================== */
+
+footer {
+    background-color: #101010;
+    color: lime;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid lime;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+footer ul.social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0;
+}
+
+footer ul.social-media li {
+    margin: 0;
+}
+
+footer ul.social-media a {
+    color: red;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul.social-media a:hover,
+footer ul.social-media a:focus {
+    color: lime;
+}
+
+/* =====================================================
+   7. Responsive Design
+   ===================================================== */
+
 @media (max-width: 768px) {
+    /* Navigation Menu */
+    .menu-toggle {
+        display: block;
+    }
+
     .navigation-menu {
         flex-direction: column;
         align-items: center;
         display: none;
+        background-color: #003300;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
     }
 
     .navigation-menu.active {
         display: flex;
     }
 
-    .menu-toggle {
-        display: block;
-    }
-}
-
-/* Hero Section */
-#home {
-    padding: 50px 20px;
-}
-
-#home h1 {
-    font-size: 2.5rem;
-    color: lime;
-}
-
-#home p {
-    font-size: 1.5rem;
-    color: lime;
-}
-
-.hero-buttons {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.hero-button {
-    background-color: #003300;
-    color: red;
-    padding: 15px 30px;
-    text-decoration: none;
-    border: 2px solid lime;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.hero-button:hover {
-    background-color: #002200;
-    color: lime;
-}
-
-.spotify-embed {
-    margin: 20px auto;
-    max-width: 300px;
-}
-
-.spotify-embed iframe {
-    width: 100%;
-    height: 380px;
-}
-
-/* Mission Statement Section */
-#mission {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-    border-top: 2px solid lime;
-}
-
-#mission h2 {
-    color: lime;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#mission p {
-    color: lime;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-/* About Section */
-#about img {
-    max-width: 300px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Gallery Section */
-#gallery {
-    padding: 40px 20px;
-}
-
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-.image-gallery img {
-    max-width: 300px;
-    margin: 10px;
-    border: 2px solid lime;
-    border-radius: 5px;
-    transition: transform 0.3s;
-}
-
-.image-gallery img:hover {
-    transform: scale(1.05);
-    border-color: red;
-}
-
-/* Buy My Music Section */
-#buy-music {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-    border-top: 2px solid lime;
-}
-
-#buy-music h2 {
-    color: lime;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#buy-music p {
-    color: lime;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.bandcamp-button {
-    background-color: #003300;
-    color: red;
-    padding: 15px 30px;
-    text-decoration: none;
-    border: 2px solid lime;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.bandcamp-button:hover {
-    background-color: #002200;
-    color: lime;
-}
-
-/* EX3 Section */
-#ex3 {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-    border-top: 2px solid lime;
-}
-
-#ex3 h2 {
-    color: lime;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#ex3 p {
-    color: lime;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.ex3-button {
-    background-color: #003300;
-    color: red;
-    padding: 15px 25px;
-    text-decoration: none;
-    border: 2px solid lime;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-}
-
-.ex3-button:hover {
-    background-color: #002200;
-    color: lime;
-    box-shadow: 0 0 10px red;
-}
-
-/* Blog Section */
-#blog article {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-    padding: 20px;
-}
-
-#blog h3 {
-    color: lime;
-}
-
-#blog .read-more {
-    color: red;
-    /* New Style for Read More Links */
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-#blog .read-more:hover {
-    color: lime;
-}
-
-/* Press Section */
-#press {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-    border-top: 2px solid lime;
-}
-
-#press h2 {
-    color: lime;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#press p {
-    color: lime;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.press-image {
-    position: relative;
-    display: inline-block;
-    cursor: zoom-in;
-}
-
-.press-image img {
-    max-width: 100%;
-    border: 2px solid lime;
-    border-radius: 5px;
-    transition: transform 0.3s;
-}
-
-#expanded-img {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    cursor: zoom-out;
-    z-index: 10000;
-}
-
-#expanded-img img {
-    max-width: 90%;
-    max-height: 90%;
-    border: 2px solid lime;
-    border-radius: 5px;
-}
-
-/* Style for blockquote in Press Section */
-#press blockquote {
-    font-style: italic;
-    color: lime;
-    margin: 20px auto;
-    max-width: 800px;
-    padding: 10px;
-    border-left: 5px solid lime;
-}
-
-#press blockquote cite {
-    display: block;
-    margin-top: 10px;
-    color: red;
-    text-align: right;
-}
-
-/* Donate Section */
-#donate {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-    border-top: 2px solid lime;
-}
-
-#donate h2 {
-    color: lime;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-#donate p {
-    color: lime;
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.donation-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 0 20px;
-}
-
-.donate-button {
-    background-color: #003300;
-    color: red;
-    padding: 15px 25px;
-    text-decoration: none;
-    border: 2px solid lime;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, color 0.3s;
-    min-width: 200px;
-    text-align: center;
-}
-
-.donate-button:hover {
-    background-color: #002200;
-    color: lime;
-}
-
-.donate-button:active {
-    background-color: #001100;
-}
-
-@media (max-width: 768px) {
-    .donation-buttons {
-        flex-direction: column;
-        align-items: center;
+    .navigation-menu li {
+        margin: 10px 0;
     }
 
-    .donate-button {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-
-/* Mailing List Section */
-#mailing-list {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-    border-top: 2px solid lime;
-}
-
-#mailing-list h2 {
-    color: lime;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#mailing-list p {
-    color: lime;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-/* Mailchimp Form Styles */
-#mc_embed_signup {
-    background: black;
-    color: lime;
-    clear: left;
-    font: 14px Helvetica, Arial, sans-serif;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-#mc_embed_signup .indicates-required {
-    color: red;
-    margin-bottom: 15px;
-}
-
-#mc_embed_signup .mc-field-group label {
-    color: lime;
-    font-size: 1rem;
-    margin-bottom: 5px;
-}
-
-#mc_embed_signup input {
-    background-color: #000;
-    color: lime;
-    border: 1px solid lime;
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-#mc_embed_signup input:focus {
-    outline: none;
-    border-color: red;
-}
-
-#mc_embed_signup .button {
-    background-color: #003300;
-    color: lime;
-    border: 1px solid lime;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-#mc_embed_signup .button:hover {
-    background-color: #002200;
-    color: red;
-}
-
-#mc_embed_signup .asterisk {
-    color: red;
-}
-
-#mc_embed_signup .response {
-    color: red;
-    font-size: 0.9rem;
-    margin-top: 10px;
-}
-
-#mc_embed_signup .foot {
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    #mc_embed_signup {
-        padding: 20px 10px;
-    }
-}
-
-/* Contact Page Styles */
-#contact {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#contact h2 {
-    color: lime;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-    padding: 20px;
-}
-
-#contact label {
-    display: block;
-    margin-bottom: 5px;
-    color: lime;
-}
-
-#contact input,
-#contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    background-color: #000;
-    color: lime;
-    border: 1px solid lime;
-}
-
-#contact button {
-    background-color: #003300;
-    color: lime;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-#contact button:hover {
-    background-color: #002200;
-}
-
-/* Discography Section */
-#discography {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#discography h2 {
-    color: lime;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.album-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.album-card {
-    background-color: #000;
-    color: lime;
-    padding: 15px;
-    text-align: center;
-    border: 1px solid lime;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-
-.album-card:hover {
-    transform: scale(1.05);
-    border-color: red;
-}
-
-.album-card img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-.album-card h3 {
-    margin: 10px 0;
-}
-
-.album-card p {
-    margin: 5px 0;
-}
-
-.album-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.album-buttons a {
-    display: inline-flex;
-    align-items: center;
-    background-color: #003300;
-    color: lime;
-    padding: 8px 12px;
-    text-decoration: none;
-    border: 1px solid lime;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    font-size: 0.9rem;
-}
-
-.album-buttons a:hover {
-    background-color: #002200;
-}
-
-.album-buttons a i {
-    margin-right: 5px;
-}
-
-.spotify-button {
-    background-color: #1DB954;
-    border-color: #1DB954;
-    color: #fff;
-}
-
-.spotify-button:hover {
-    background-color: #1AA34A;
-}
-
-.youtube-button {
-    background-color: #FF0000;
-    border-color: #FF0000;
-    color: #fff;
-}
-
-.youtube-button:hover {
-    background-color: #CC0000;
-}
-
-/* Footer Section */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #003300;
-    color: lime;
-}
-
-footer .social-media {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 10px 0;
-    list-style: none;
-}
-
-footer .social-media li {
-    margin: 0 10px;
-}
-
-footer .social-media a {
-    color: red;
-    font-size: 1.5rem;
-    transition: color 0.3s;
-}
-
-footer .social-media a:hover {
-    color: lime;
-}
-
-/* Adjustments for Smaller Screens */
-@media (max-width: 768px) {
-    #home {
-        padding: 30px 10px;
+    /* Adjust Main Content Padding */
+    main#whoisgatofiero,
+    main#testimonials {
+        padding: 15px;
+        margin: 20px auto;
     }
 
-    .hero-button {
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
-
-    #mission,
-    #ex3,
-    #press,
-    #donate,
-    #mailing-list {
-        padding: 30px 10px;
-    }
-
-    #donate h2 {
-        font-size: 2rem;
-    }
-
-    .donate-button {
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
-
-    #contact form {
-        padding: 10px;
-    }
-
-    #contact input,
-    #contact textarea {
+    /* Testimonial Slider Arrows */
+    .slick-prev,
+    .slick-next {
+        font-size: 0.8rem;
         padding: 8px;
     }
 
-    #contact button {
-        padding: 8px 16px;
+    /* Footer Social Media Icons */
+    footer ul.social-media {
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
-    .image-gallery img {
-        max-width: 100%;
-        margin: 5px;
+    /* Buttons */
+    button,
+    a.button,
+    a.hero-button,
+    a.donate-button,
+    a.bandcamp-button,
+    a.ex3-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 }
 
-/* New Styles Added */
+/* =====================================================
+   8. Additional Styles
+   ===================================================== */
 
 /* Read More Link Styles in Blog Section */
 #blog .read-more {
@@ -754,8 +398,57 @@ footer .social-media a:hover {
     transition: color 0.3s;
 }
 
-#blog .read-more:hover {
+#blog .read-more:hover,
+#blog .read-more:focus {
     color: lime;
 }
 
-/* End of New Styles */
+/* Button Variations */
+button.menu-toggle,
+button.slick-prev,
+button.slick-next {
+    background-color: #003300;
+    color: lime;
+    border: none;
+    cursor: pointer;
+}
+
+button.menu-toggle:hover,
+button.slick-prev:hover,
+button.slick-next:hover {
+    background-color: #002200;
+    color: red;
+}
+
+/* Ensure images within galleries are responsive */
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Lightbox or Image Expansion Styles (if used) */
+#expanded-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+#expanded-img img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+    border: 2px solid lime;
+}
+
+/* =====================================================
+   9. End of Stylesheet
+   ===================================================== */
