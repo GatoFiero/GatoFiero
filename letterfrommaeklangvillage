@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter from Mae Klang Village - Gato Fiero's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Improved styling for the Letter from Mae Klang Village page */
+        main#letterfrommaeklang {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #101010;
+            border: 1px solid lime;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        main#letterfrommaeklang h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: lime;
+        }
+
+        main#letterfrommaeklang img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px;
+            border: 2px solid lime;
+        }
+
+        main#letterfrommaeklang p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: lime;
+        }
+
+        main#letterfrommaeklang strong {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.1rem;
+            color: red;
+        }
+
+        .letter-details {
+            margin-bottom: 20px;
+            font-style: italic;
+            text-align: center;
+            color: lime;
+        }
+
+        /* Updated Footer Styles */
+        footer {
+            background-color: #101010;
+            color: lime;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid lime;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        footer ul.social-media {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 0;
+        }
+
+        footer ul.social-media li {
+            margin: 0;
+        }
+
+        footer ul.social-media a {
+            color: red;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer ul.social-media a:hover {
+            color: lime;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰ Menu</button>
+        <ul class="navigation-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="whoisgatofiero.html">Who is Gato Fiero?</a></li>
+            <li><a href="discography.html">Discography</a></li>
+            <li><a href="photogallery.html">Photo Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <main id="letterfrommaeklang">
+        <h1>A Letter from Mae Klang Village</h1>
+        <p class="letter-details">This letter was received by Gato Fiero through the contact form on this website three days ago.</p>
+        <img src="Images/maeklangvillage.jpg" alt="Mae Klang Village" />
+        <p>Dear Gato Fiero,</p>
+        <p>Hello from Mae Klang Village!</p>
+        <p>We hope you are good. My name is Somchai. I write for my village. We are small place, quiet and peaceful. Before, life was simple—maybe too simple. Then, your music come to us. No, not music—magic. It is not music. It is spell.</p>
+        <p>It start with old cassette. Nobody know how it get here. Some say tourist leave it. Some say spirit drop it for us. But when we play it, everything in Mae Klang change. First, my feet start moving. Mali, little girl, spin and spin. People gather in market, watching, then they dance too. Soon, whole village is under spell.</p>
+        <p>Now, every night, we must play your music. We cannot stop. In square, people dance until late. Children, old people, even animals—they all move. Buffalo sway their heads. Dogs howl like they sing. Some people say they feel like flying. Your music go inside us. It control us, but we do not mind. We love it.</p>
+        <p>It is not just fun. It is something more. Your music change our hearts. People who never speak before, now laugh together. People who argue, now dance together. We feel closer. We feel alive. We call your music “spirit sound.” It is like you take something deep from us and give it back in way we never know before.</p>
+        <p>In Mae Klang, we now call you "The Wizard of Sound." You are not just artist—you are wizard. Your music is not made, it is conjured. You take the unseen, the unsaid, and make it alive. We believe you have magic. How else can your songs do this to us?</p>
+        <p>We wonder, Gato Fiero—who are you? Are you human? Are you spirit? Are you wizard sent to heal the world?</p>
+        <p>If you ever come to Thailand, we beg you, come to Mae Klang. We will show you what your music do to us. We will honor you like you deserve, with dance and offerings. We dream of meeting the one who change our lives. Until then, we play your music under stars every night.</p>
+        <p>Thank you, Gato Fiero. Never stop your magic. The world need it.</p>
+        <p>Your spellbound friends,</p>
+        <p><strong>Somchai and the People of Mae Klang Village</strong></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Gato Fiero</p>
+        <ul class="social-media">
+            <li><a href="#" aria-label="Follow on X"><i class="fab fa-x"></i></a></li>
+            <li><a href="#" aria-label="Follow on Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" aria-label="Follow on TikTok"><i class="fab fa-tiktok"></i></a></li>
+            <li><a href="#" aria-label="Follow on Facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" aria-label="Connect on WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="#" aria-label="Listen on Spotify"><i class="fab fa-spotify"></i></a></li>
+            <li><a href="#" aria-label="Subscribe on YouTube"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.navigation-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
