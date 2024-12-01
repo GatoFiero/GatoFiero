@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Mail - Gato Fiero's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Improved styling for the Fan Mail landing page */
+        main#fanmail {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #101010;
+            border: 1px solid lime;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        main#fanmail h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: lime;
+        }
+
+        main#fanmail p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: lime;
+        }
+
+        .fanmail-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .fanmail-links a {
+            display: block;
+            padding: 15px 20px;
+            background-color: #003300;
+            color: lime;
+            text-decoration: none;
+            border: 1px solid lime;
+            border-radius: 8px;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .fanmail-links a:hover {
+            background-color: #002200;
+            color: red;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #101010;
+            color: lime;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid lime;
+            margin-top: 40px;
+        }
+
+        footer ul.social-media {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 0;
+        }
+
+        footer ul.social-media li {
+            margin: 0;
+        }
+
+        footer ul.social-media a {
+            color: red;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer ul.social-media a:hover {
+            color: lime;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰ Menu</button>
+        <ul class="navigation-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="whoisgatofiero.html">Who is Gato Fiero?</a></li>
+            <li><a href="discography.html">Discography</a></li>
+            <li><a href="photogallery.html">Photo Gallery</a></li>
+            <li><a href="fanmail.html" class="active">Fan Mail</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <main id="fanmail">
+        <h1>Fan Mail for Gato Fiero</h1>
+        <p>Welcome to the Fan Mail page. Here, you can read the heartfelt messages sent to Gato Fiero by fans from around the world. Click on the links below to explore each message.</p>
+        <ul class="fanmail-links">
+            <li><a href="letterfrommaeklangvillage.html">Letter from Mae Klang Village</a></li>
+            <li><a href="placeholder1.html">Fan Mail 1</a></li>
+            <li><a href="placeholder2.html">Fan Mail 2</a></li>
+            <li><a href="placeholder3.html">Fan Mail 3</a></li>
+            <li><a href="placeholder4.html">Fan Mail 4</a></li>
+            <li><a href="placeholder5.html">Fan Mail 5</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Gato Fiero</p>
+        <ul class="social-media">
+            <li><a href="#" aria-label="Follow on X"><i class="fab fa-x"></i></a></li>
+            <li><a href="#" aria-label="Follow on Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" aria-label="Follow on TikTok"><i class="fab fa-tiktok"></i></a></li>
+            <li><a href="#" aria-label="Follow on Facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" aria-label="Connect on WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="#" aria-label="Listen on Spotify"><i class="fab fa-spotify"></i></a></li>
+            <li><a href="#" aria-label="Subscribe on YouTube"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.navigation-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
