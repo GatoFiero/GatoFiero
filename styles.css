@@ -5,7 +5,7 @@
 
 body {
     background-color: black;
-    color: lime;
+    color: #FFA500; /* Warm dark orange text */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -14,21 +14,24 @@ body {
 h1, h2, h3 {
     text-align: center;
     margin: 20px 0;
+    color: #FFB347; /* Lighter warm orange for headers */
 }
 
 p {
     line-height: 1.6;
-    text-align: center;
+    text-align: justify;
     margin: 10px 20px;
+    color: #FFA500; /* Warm dark orange for body text */
 }
 
 a {
-    color: red;
+    color: #FF7F50; /* Coral orange for links */
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #FFD700; /* Gold for hover effect */
 }
 
 img {
@@ -41,14 +44,14 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #003300;
+    background-color: #1A1A1A; /* Dark gray background for navigation */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .menu-toggle {
     display: none;
-    background-color: #003300;
-    color: lime;
+    background-color: #1A1A1A;
+    color: #FFA500;
     padding: 10px 15px;
     cursor: pointer;
     text-align: center;
@@ -71,17 +74,17 @@ header {
 
 .navigation-menu a {
     padding: 10px 15px;
-    color: red;
+    color: #FF7F50; /* Coral orange for navigation links */
 }
 
 .navigation-menu a:hover {
-    background-color: #002200;
-    color: lime;
+    background-color: #2A2A2A; /* Slightly darker gray for hover background */
+    color: #FFD700; /* Gold for hover text */
 }
 
 .navigation-menu a.active {
-    border-bottom: 2px solid lime;
-    color: lime;
+    border-bottom: 2px solid #FFD700; /* Gold underline for active link */
+    color: #FFB347; /* Lighter warm orange for active link */
 }
 
 /* Mobile Navigation Menu */
@@ -108,12 +111,12 @@ header {
 
 #home h1 {
     font-size: 2.5rem;
-    color: lime;
+    color: #FFB347; /* Lighter warm orange for headers */
 }
 
 #home p {
     font-size: 1.5rem;
-    color: lime;
+    color: #FFA500; /* Warm dark orange for paragraphs */
 }
 
 .hero-buttons {
@@ -122,553 +125,27 @@ header {
 }
 
 .hero-button {
-    background-color: #003300;
-    color: red;
+    background-color: #1A1A1A;
+    color: #FF7F50;
     padding: 15px 30px;
     text-decoration: none;
-    border: 2px solid lime;
+    border: 2px solid #FFA500;
     border-radius: 8px;
     font-size: 1.2rem;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .hero-button:hover {
-    background-color: #002200;
-    color: lime;
-}
-
-.spotify-embed {
-    margin: 20px auto;
-    max-width: 300px;
-}
-
-.spotify-embed iframe {
-    width: 100%;
-    height: 380px;
-}
-
-/* Mission Statement Section */
-#mission {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-    border-top: 2px solid lime;
-}
-
-#mission h2 {
-    color: lime;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#mission p {
-    color: lime;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-/* About Section */
-#about img {
-    max-width: 300px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Gallery Section */
-#gallery {
-    padding: 40px 20px;
-}
-
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-.image-gallery img {
-    max-width: 300px;
-    margin: 10px;
-    border: 2px solid lime;
-    border-radius: 5px;
-    transition: transform 0.3s;
-}
-
-.image-gallery img:hover {
-    transform: scale(1.05);
-    border-color: red;
-}
-
-/* Buy My Music Section */
-#buy-music {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-    border-top: 2px solid lime;
-}
-
-#buy-music h2 {
-    color: lime;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#buy-music p {
-    color: lime;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.bandcamp-button {
-    background-color: #003300;
-    color: red;
-    padding: 15px 30px;
-    text-decoration: none;
-    border: 2px solid lime;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.bandcamp-button:hover {
-    background-color: #002200;
-    color: lime;
-}
-
-/* EX3 Section */
-#ex3 {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-    border-top: 2px solid lime;
-}
-
-#ex3 h2 {
-    color: lime;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#ex3 p {
-    color: lime;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.ex3-button {
-    background-color: #003300;
-    color: red;
-    padding: 15px 25px;
-    text-decoration: none;
-    border: 2px solid lime;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-}
-
-.ex3-button:hover {
-    background-color: #002200;
-    color: lime;
-    box-shadow: 0 0 10px red;
-}
-
-/* Blog Section */
-#blog article {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-    padding: 20px;
-}
-
-#blog h3 {
-    color: lime;
-}
-
-#blog .read-more {
-    color: red;
-}
-
-#blog .read-more:hover {
-    color: lime;
-}
-
-/* Press Section */
-#press {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-    border-top: 2px solid lime;
-}
-
-#press h2 {
-    color: lime;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#press p {
-    color: lime;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.press-image {
-    position: relative;
-    display: inline-block;
-    cursor: zoom-in;
-}
-
-.press-image img {
-    max-width: 100%;
-    border: 2px solid lime;
-    border-radius: 5px;
-    transition: transform 0.3s;
-}
-
-#expanded-img {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    cursor: zoom-out;
-    z-index: 10000;
-}
-
-#expanded-img img {
-    max-width: 90%;
-    max-height: 90%;
-    border: 2px solid lime;
-    border-radius: 5px;
-}
-
-/* Style for blockquote in Press Section */
-#press blockquote {
-    font-style: italic;
-    color: lime;
-    margin: 20px auto;
-    max-width: 800px;
-    padding: 10px;
-    border-left: 5px solid lime;
-}
-
-#press blockquote cite {
-    display: block;
-    margin-top: 10px;
-    color: red;
-    text-align: right;
-}
-
-/* Donate Section */
-#donate {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-    border-top: 2px solid lime;
-}
-
-#donate h2 {
-    color: lime;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-#donate p {
-    color: lime;
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.donation-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 0 20px;
-}
-
-.donate-button {
-    background-color: #003300;
-    color: red;
-    padding: 15px 25px;
-    text-decoration: none;
-    border: 2px solid lime;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, color 0.3s;
-    min-width: 200px;
-    text-align: center;
-}
-
-.donate-button:hover {
-    background-color: #002200;
-    color: lime;
-}
-
-.donate-button:active {
-    background-color: #001100;
-}
-
-@media (max-width: 768px) {
-    .donation-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .donate-button {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-
-/* Mailing List Section */
-#mailing-list {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-    border-top: 2px solid lime;
-}
-
-#mailing-list h2 {
-    color: lime;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#mailing-list p {
-    color: lime;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-/* Mailchimp Form Styles */
-#mc_embed_signup {
-    background: black;
-    color: lime;
-    clear: left;
-    font: 14px Helvetica, Arial, sans-serif;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-#mc_embed_signup .indicates-required {
-    color: red;
-    margin-bottom: 15px;
-}
-
-#mc_embed_signup .mc-field-group label {
-    color: lime;
-    font-size: 1rem;
-    margin-bottom: 5px;
-}
-
-#mc_embed_signup input {
-    background-color: #000;
-    color: lime;
-    border: 1px solid lime;
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-#mc_embed_signup input:focus {
-    outline: none;
-    border-color: red;
-}
-
-#mc_embed_signup .button {
-    background-color: #003300;
-    color: lime;
-    border: 1px solid lime;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-#mc_embed_signup .button:hover {
-    background-color: #002200;
-    color: red;
-}
-
-#mc_embed_signup .asterisk {
-    color: red;
-}
-
-#mc_embed_signup .response {
-    color: red;
-    font-size: 0.9rem;
-    margin-top: 10px;
-}
-
-#mc_embed_signup .foot {
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    #mc_embed_signup {
-        padding: 20px 10px;
-    }
-}
-
-/* Contact Page Styles */
-#contact {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#contact h2 {
-    color: lime;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-    padding: 20px;
-}
-
-#contact label {
-    display: block;
-    margin-bottom: 5px;
-    color: lime;
-}
-
-#contact input,
-#contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    background-color: #000;
-    color: lime;
-    border: 1px solid lime;
-}
-
-#contact button {
-    background-color: #003300;
-    color: lime;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-#contact button:hover {
-    background-color: #002200;
-}
-
-/* Discography Section */
-#discography {
-    background-color: black;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#discography h2 {
-    color: lime;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.album-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.album-card {
-    background-color: #000;
-    color: lime;
-    padding: 15px;
-    text-align: center;
-    border: 1px solid lime;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-
-.album-card:hover {
-    transform: scale(1.05);
-    border-color: red;
-}
-
-.album-card img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-.album-card h3 {
-    margin: 10px 0;
-}
-
-.album-card p {
-    margin: 5px 0;
-}
-
-.album-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.album-buttons a {
-    display: inline-flex;
-    align-items: center;
-    background-color: #003300;
-    color: lime;
-    padding: 8px 12px;
-    text-decoration: none;
-    border: 1px solid lime;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    font-size: 0.9rem;
-}
-
-.album-buttons a:hover {
-    background-color: #002200;
-}
-
-.album-buttons a i {
-    margin-right: 5px;
-}
-
-.spotify-button {
-    background-color: #1DB954;
-    border-color: #1DB954;
-    color: #fff;
-}
-
-.spotify-button:hover {
-    background-color: #1AA34A;
-}
-
-.youtube-button {
-    background-color: #FF0000;
-    border-color: #FF0000;
-    color: #fff;
-}
-
-.youtube-button:hover {
-    background-color: #CC0000;
+    background-color: #2A2A2A;
+    color: #FFD700;
 }
 
 /* Footer Section */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #003300;
-    color: lime;
+    background-color: #1A1A1A;
+    color: #FFA500;
 }
 
 footer .social-media {
@@ -684,251 +161,64 @@ footer .social-media li {
 }
 
 footer .social-media a {
-    color: red;
+    color: #FF7F50;
     font-size: 1.5rem;
     transition: color 0.3s;
 }
 
 footer .social-media a:hover {
-    color: lime;
+    color: #FFD700;
 }
 
-/* Adjustments for Smaller Screens */
-@media (max-width: 768px) {
-    #home {
-        padding: 30px 10px;
-    }
-
-    .hero-button {
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
-
-    #mission,
-    #ex3,
-    #press,
-    #donate,
-    #mailing-list {
-        padding: 30px 10px;
-    }
-
-    #donate h2 {
-        font-size: 2rem;
-    }
-
-    .donate-button {
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
-
-    #contact form {
-        padding: 10px;
-    }
-
-    #contact input,
-    #contact textarea {
-        padding: 8px;
-    }
-
-    #contact button {
-        padding: 8px 16px;
-    }
-
-    .image-gallery img {
-        max-width: 100%;
-        margin: 5px;
-    }
-}
-
-/* General Styling for Letter from Mae Klang Page */
-main#letterfrommaeklang {
+/* General Content Styling */
+main {
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
     background-color: #101010;
-    border: 1px solid lime;
+    border: 1px solid #FFA500; /* Warm dark orange border */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-    animation: fadeIn 1.5s ease-in-out;
 }
 
-main#letterfrommaeklang h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
-    color: lime;
-    text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.5);
+main h1, main h2 {
+    color: #FFB347; /* Lighter warm orange for headers in main content */
 }
 
-main#letterfrommaeklang img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    border-radius: 10px;
-    border: 2px solid lime;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+main p {
+    color: #FFA500; /* Warm dark orange for main body text */
 }
 
-main#letterfrommaeklang img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 255, 0, 0.5);
-}
-
-main#letterfrommaeklang p {
-    line-height: 1.8;
-    margin-bottom: 20px;
-    text-align: justify;
-    color: lime;
-    font-family: 'Georgia', serif;
-}
-
-main#letterfrommaeklang strong {
-    display: block;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 1.2rem;
-    color: red;
-    text-transform: uppercase;
-}
-
-/* Styling for Letter Details */
-.letter-details {
-    margin-bottom: 20px;
+/* Blockquote Styling */
+blockquote {
     font-style: italic;
-    text-align: center;
-    color: lime;
-    border-top: 1px dashed lime;
-    border-bottom: 1px dashed lime;
-    padding: 10px;
-}
-
-/* Footer Styles Specific to This Page */
-footer {
-    background-color: #101010;
-    color: lime;
-    padding: 20px;
-    text-align: center;
-    border-top: 2px solid lime;
-    margin-top: 40px;
-    font-size: 1rem;
-}
-
-footer ul.social-media {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-footer ul.social-media li {
-    margin: 0;
-}
-
-footer ul.social-media a {
-    color: red;
-    font-size: 1.5rem;
-    text-decoration: none;
-    transition: color 0.3s, transform 0.3s;
-}
-
-footer ul.social-media a:hover {
-    color: lime;
-    transform: scale(1.2);
-}
-
-/* Animation for Fade-In Effect */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-/* Specific Styling for The Witch Hunt Begins Page */
-main#thewitchhunt {
+    color: #FFB347; /* Lighter warm orange for quotes */
+    margin: 20px auto;
     max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #101010;
-    border: 1px solid lime;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-main#thewitchhunt h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-align: center;
-    color: lime;
-    text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.5);
-}
-
-main#thewitchhunt p {
-    line-height: 1.8;
-    margin-bottom: 20px;
-    text-align: justify;
-    color: lime;
-}
-
-main#thewitchhunt strong {
-    display: block;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 1.1rem;
-    color: red;
-}
-
-.alert-banner {
-    background-color: red;
-    color: white;
-    text-align: center;
     padding: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
+    border-left: 5px solid #FFA500; /* Warm dark orange left border */
 }
 
-/* Hero Section for The Witch Hunt */
-#thewitchhunt-hero {
-    background-color: #000;
-    color: lime;
-    text-align: center;
-    padding: 50px 20px;
-    border-bottom: 2px solid lime;
+blockquote cite {
+    display: block;
+    margin-top: 10px;
+    color: #FF7F50; /* Coral orange for citation text */
+    text-align: right;
 }
 
-#thewitchhunt-hero h1 {
-    font-size: 3rem;
-    text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.5);
-    margin-bottom: 20px;
+/* Buttons */
+.button {
+    background-color: #1A1A1A;
+    color: #FF7F50;
+    padding: 10px 20px;
+    border: 2px solid #FFA500;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-#thewitchhunt-hero p {
-    font-size: 1.5rem;
-    margin: 10px 0 20px;
-}
-
-/* Animated Warning Symbol */
-.warning-icon {
-    font-size: 3rem;
-    color: red;
-    animation: pulse 1s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+.button:hover {
+    background-color: #2A2A2A;
+    color: #FFD700;
 }
