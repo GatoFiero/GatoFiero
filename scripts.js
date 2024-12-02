@@ -31,3 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+<script>
+    function changeLanguage() {
+        const lang = document.getElementById('languageSelector').value;
+        window.location.href = lang; // Redirect to the selected language folder
+    }
+</script>
