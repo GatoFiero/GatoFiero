@@ -848,3 +848,87 @@ footer ul.social-media a:hover {
         transform: translateY(0);
     }
 }
+
+
+/* Specific Styling for The Witch Hunt Begins Page */
+main#thewitchhunt {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #101010;
+    border: 1px solid lime;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+main#thewitchhunt h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: lime;
+    text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.5);
+}
+
+main#thewitchhunt p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: lime;
+}
+
+main#thewitchhunt strong {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: red;
+}
+
+.alert-banner {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Hero Section for The Witch Hunt */
+#thewitchhunt-hero {
+    background-color: #000;
+    color: lime;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 2px solid lime;
+}
+
+#thewitchhunt-hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+#thewitchhunt-hero p {
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+}
+
+/* Animated Warning Symbol */
+.warning-icon {
+    font-size: 3rem;
+    color: red;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
