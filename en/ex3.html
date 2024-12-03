@@ -6,25 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Include Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <!-- Navigation Menu -->
     <header>
-        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">☰ Menu</button>
-        <nav id="primary-menu">
-            <ul class="navigation-menu">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="discography.html">Discography</a></li>
-                <li><a href="index.html#gallery">Gallery</a></li>
-                <!-- Active link for EX3 -->
-                <li><a href="ex3.html" class="active">EX3</a></li>
-                <li><a href="index.html#blog">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation menu">☰ Menu</button>
+    <nav id="primary-menu">
+        <ul class="navigation-menu">
+            <li><a href="/en/index.html#home" class="active">Home</a></li>
+            <li><a href="/en/whoisgatofiero.html">Who is Gato Fiero?</a></li>
+            <li><a href="/en/discography.html">Discography</a></li>
+            <li><a href="/en/fanmail.html">Fan Mail</a></li>
+            <li><a href="/en/essaysandarticles.html">Essays & Articles</a></li>
+            <li><a href="/en/photogallery.html">Photo Gallery</a></li>
+            <li><a href="/en/ex3.html">EX3</a></li>
+            <li><a href="/en/blog.html">Blog</a></li>
+            <li><a href="/en/testimonials.html">Testimonials</a></li>
+            <li><a href="/en/contact.html">Contact</a></li>
+        </ul>
+        <!-- Language Selector -->
+        <select id="languageSelector" onchange="changeLanguage()">
+            <option value="/">Default (English)</option>
+            <option value="/en/">English</option>
+            <option value="/es/">Español</option>
+            <option value="/fr/">Français</option>
+        </select>
+    </nav>
+</header>
 
     <!-- EX3 Gallery Section -->
     <section id="ex3-gallery">
@@ -32,9 +41,9 @@
         <p>Step into a realm where the ordinary dissolves, and the unseen comes to life. Each piece is a doorway to a new mystery. Will you dare to explore?</p>
         <div class="image-gallery">
             <!-- Replace with actual images of EX3's artwork -->
-            <img src="Images/ex3-art1.jpg" alt="EX3 Artwork 1">
-            <img src="Images/ex3-art2.jpg" alt="EX3 Artwork 2">
-            <img src="Images/ex3-art3.jpg" alt="EX3 Artwork 3">
+            <img src="../Images/ex3-art1.jpg" alt="EX3 Artwork 1">
+            <img src="../Images/ex3-art2.jpg" alt="EX3 Artwork 2">
+            <img src="../Images/ex3-art3.jpg" alt="EX3 Artwork 3">
             <!-- Add more images as needed -->
         </div>
     </section>
