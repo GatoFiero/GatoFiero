@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
     const primaryMenu = document.querySelector("#primary-menu");
-    const navMenu = document.querySelector("#navigation-menu");
+    const navMenu = document.querySelector(".navigation-menu");
 
     menuToggle.addEventListener("click", function () {
         const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         else 
         {
             // show the menu if it is closed
-            navMenu.style.display="block";
+            navMenu.style.display ="block";
         }
     });
 });
