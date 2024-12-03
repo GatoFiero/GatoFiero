@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correo de Fans - Sitio Web de Gato Fiero</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Estilo mejorado para la página de Correo de Fans */
+        main#fanmail {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #101010;
+            border: 1px solid lime;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        main#fanmail h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: lime;
+        }
+
+        main#fanmail p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: lime;
+        }
+
+        .fanmail-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .fanmail-links a {
+            display: block;
+            padding: 15px 20px;
+            background-color: #003300;
+            color: lime;
+            text-decoration: none;
+            border: 1px solid lime;
+            border-radius: 8px;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .fanmail-links a:hover {
+            background-color: #002200;
+            color: red;
+        }
+
+        /* Estilo del pie de página */
+        footer {
+            background-color: #101010;
+            color: lime;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid lime;
+            margin-top: 40px;
+        }
+
+        footer ul.social-media {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 0;
+        }
+
+        footer ul.social-media li {
+            margin: 0;
+        }
+
+        footer ul.social-media a {
+            color: red;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer ul.social-media a:hover {
+            color: lime;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Alternar menú de navegación">☰ Menú</button>
+    <nav id="primary-menu">
+        <ul class="navigation-menu">
+            <li><a href="/es/index.html#home" class="active">Inicio</a></li>
+            <li><a href="/es/quienesgatofiero.html">¿Quién es Gato Fiero?</a></li>
+            <li><a href="/es/discografia.html">Discografía</a></li>
+            <li><a href="/es/correodefans.html">Correo de Fans</a></li>
+            <li><a href="/es/ensayosyarticulos.html">Ensayos y Artículos</a></li>
+            <li><a href="/es/galeriadefotos.html">Galería de Fotos</a></li>
+            <li><a href="/es/ex3.html">EX3</a></li>
+            <li><a href="/es/blog.html">Blog</a></li>
+            <li><a href="/es/testimonios.html">Testimonios</a></li>
+            <li><a href="/es/contacto.html">Contacto</a></li>
+        </ul>
+        <!-- Selector de Idioma -->
+        <select id="languageSelector" onchange="changeLanguage()">
+            <option value="/">Por defecto (Inglés)</option>
+            <option value="/en/">English</option>
+            <option value="/es/">Español</option>
+            <option value="/fr/">Français</option>
+        </select>
+    </nav>
+</header>
+
+    <main id="fanmail">
+        <h1>Correo de Fans para Gato Fiero</h1>
+        <p>Bienvenido a la página de Correo de Fans. Aquí puedes leer los mensajes enviados a Gato Fiero por admiradores de todo el mundo. Haz clic en los enlaces a continuación para explorar cada mensaje.</p>
+        <ul class="fanmail-links">
+            <li><a href="/es/lacazadelasbrujascomienza.html">¡La Cacería Comienza!</a></li>
+            <li><a href="/es/cartadesdeelpueblomaeklang.html">Carta del Pueblo Mae Klang</a></li>
+            <li><a href="placeholder1.html">Correo de Fans 1</a></li>
+            <li><a href="placeholder2.html">Correo de Fans 2</a></li>
+            <li><a href="placeholder3.html">Correo de Fans 3</a></li>
+            <li><a href="placeholder4.html">Correo de Fans 4</a></li>
+            <li><a href="placeholder5.html">Correo de Fans 5</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Gato Fiero</p>
+        <ul class="social-media">
+            <li><a href="#" aria-label="Síguenos en X"><i class="fab fa-x"></i></a></li>
+            <li><a href="#" aria-label="Síguenos en Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" aria-label="Síguenos en TikTok"><i class="fab fa-tiktok"></i></a></li>
+            <li><a href="#" aria-label="Síguenos en Facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" aria-label="Conéctate en WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="#" aria-label="Escúchanos en Spotify"><i class="fab fa-spotify"></i></a></li>
+            <li><a href="#" aria-label="Suscríbete en YouTube"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
 
