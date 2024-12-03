@@ -111,8 +111,8 @@ header {
         width: 100%;
     }
 
-    /* Show the navigation menu when active */
-    .navigation-menu.active {
+    /* Show the navigation menu when open */
+    .navigation-menu.open {
         display: flex;
         position: absolute;
         top: 100%; /* Position below the header */
