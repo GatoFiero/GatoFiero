@@ -164,25 +164,9 @@
     </footer>
 
     <!-- Scripts -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const menuToggle = document.querySelector(".menu-toggle");
-            const primaryMenu = document.querySelector("#primary-menu");
-
-            menuToggle.addEventListener("click", function () {
-                const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
-                menuToggle.setAttribute("aria-expanded", !isExpanded);
-                primaryMenu.classList.toggle("open");
-            });
-        });
-
-        function changeLanguage() {
-            const lang = document.getElementById('languageSelector').value;
-            window.location.href = lang;
-        }
-    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script src="../scripts.js"></script>
 </body>
 </html>
 
