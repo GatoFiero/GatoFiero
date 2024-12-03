@@ -1,1 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>El Sitio Web de Gato Fiero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenido al sitio web oficial de Gato Fiero. Explora música, arte, publicaciones de blog y ponte en contacto.">
+    <!-- Incluye Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Incluye CSS de Mailchimp -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <!-- Tus estilos personalizados -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <header>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Alternar menú de navegación">☰ Menú</button>
+    <nav id="primary-menu">
+        <ul class="navigation-menu">
+            <li><a href="/es/index.html#home" class="active">Inicio</a></li>
+            <li><a href="/es/quienesgatofiero.html">¿Quién es Gato Fiero?</a></li>
+            <li><a href="/es/discografia.html">Discografía</a></li>
+            <li><a href="/es/correodefans.html">Correo de Fans</a></li>
+            <li><a href="/es/ensayosyarticulos.html">Ensayos y Artículos</a></li>
+            <li><a href="/es/galeriadefotos.html">Galería de Fotos</a></li>
+            <li><a href="/es/ex3.html">EX3</a></li>
+            <li><a href="/es/blog.html">Blog</a></li>
+            <li><a href="/es/testimonios.html">Testimonios</a></li>
+            <li><a href="/es/contacto.html">Contacto</a></li>
+        </ul>
+        <!-- Selector de idioma -->
+        <select id="languageSelector" onchange="changeLanguage()">
+            <option value="/">Predeterminado (Inglés)</option>
+            <option value="/en/">Inglés</option>
+            <option value="/es/" selected>Español</option>
+            <option value="/fr/">Francés</option>
+        </select>
+    </nav>
+</header>
+
+    <!-- Sección principal -->
+    <section id="home">
+        <h1>Bienvenido al Mundo de Gato Fiero</h1>
+        <p>Explorando el Límite del Sonido y el Alma</p>
+        <!-- Botón "Escucha Ahora" -->
+        <div class="hero-buttons">
+            <a href="/es/discografia.html" class="hero-button">Escucha Ahora</a>
+        </div>
+        <div class="spotify-embed">
+            <iframe src="https://open.spotify.com/embed/artist/4ukz8Pl0euzsRvqPrPW50q" frameborder="0" allowtransparency="true" allow="encrypted-media" title="Gato Fiero en Spotify"></iframe>
+        </div>
+    </section>
+
+    <!-- Declaración de Misión -->
+    <section id="mission">
+        <h2>Declaración de Misión</h2>
+        <p>Inspirándote a perseverar en tus dificultades, gracias por escuchar.</p>
+    </section>
+
+    <!-- Sección Acerca de -->
+    <section id="about">
+        <h2>Susurros en las Sombras</h2>
+        <p>Con un nombre susurrado en círculos artísticos, se sabe poco sobre la persona detrás del seudónimo. El trabajo de Gato Fiero desafía todas las etiquetas convencionales. Un baile entre la luz y la sombra, cada obra invoca un reflejo de las profundidades invisibles dentro del alma del artista.</p>
+        <img src="../Images/background.jpg" alt="Gato Fiero">
+        <!-- Botón "¿Quién es Gato Fiero?" -->
+        <div class="hero-buttons">
+            <a href="/es/quienesgatofiero.html" class="hero-button">¿Quién es Gato Fiero?</a>
+        </div>
+    </section>
+
+    <!-- Sección de Galería -->
+    <section id="gallery">
+        <h2>¿Has Visto Este Perro?</h2>
+        <p>No te acerques - ¡Informa Inmediatamente!</p>
+        <div class="image-gallery">
+            <img src="../Images/Peruvian-Hairless-Closeup.jpg" alt="Un Perro Sin Pelo Peruano">
+            <img src="../Images/da3edd5dc1b844c060019c7411a2dc37.jpg" alt="Arte">
+        </div>
+    </section>
+
+    <!-- Sección de Comprar Música -->
+    <section id="buy-music">
+        <h2>Compra Mi Música</h2>
+        <p>Apoya mi música comprando pistas y álbumes directamente en Bandcamp.</p>
+        <a href="https://gatofiero.bandcamp.com/" target="_blank" class="bandcamp-button">Visita Mi Bandcamp</a>
+    </section>
+
+    <!-- Sección de EX3 -->
+    <section id="ex3">
+        <h2>EX3 - El Artista Enigmático</h2>
+        <p>Sumérgete en el misterioso reino de EX3.</p>
+        <a href="/es/ex3.html" class="ex3-button">Entrar</a>
+    </section>
+
+    <!-- Sección de Prensa -->
+    <section id="press">
+        <h2>Prensa y Medios</h2>
+        <p>Lee lo que otros están diciendo sobre Gato Fiero.</p>
+        <div class="press-image">
+            <img src="../Images/deadcatbouncearticle.png" alt="Artículo de Prensa" id="press-article">
+        </div>
+        <blockquote>
+            <p><em>"Mientras la música llenaba la sala, sentí una sensación de libertad que me inundaba. Durante esos preciosos momentos, fui transportado fuera de este lugar sombrío."</em></p>
+            <cite>— Ray Finkle</cite>
+        </blockquote>
+    </section>
+
+    <!-- Sección de Donaciones -->
+    <section id="donate">
+        <h2>Cómprale una Cerveza a Gato</h2>
+        <p>Tu apoyo mantiene viva la creatividad.</p>
+        <div class="donation-buttons">
+            <a href="https://cash.app/$GatoFiero" target="_blank" class="donate-button">Donar a través de CashApp</a>
+        </div>
+    </section>
+
+    <!-- Sección de Lista de Correo -->
+    <section id="mailing-list">
+        <h2>Únete a la Lista de Correo</h2>
+        <p>Mantente informado sobre nuevos lanzamientos, eventos y contenido exclusivo.</p>
+        <!-- Formulario de Mailchimp -->
+        <div id="mc_embed_signup">
+            <form action="https://gatofiero.us13.list-manage.com/subscribe/post?u=0bbd1e543ce9471323d553663&amp;id=a0eb20a680&amp;f_id=0073f5e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                <div id="mc_embed_signup_scroll">
+                    <div class="indicates-required"><span class="asterisk">*</span> indica requerido</div>
+                    <div class="mc-field-group">
+                        <label for="mce-EMAIL">Dirección de Correo Electrónico <span class="asterisk">*</span></label>
+                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                    </div>
+                    <div class="mc-field-group">
+                        <label for="mce-FNAME">Nombre </label>
+                        <input type="text" name="FNAME" class="text" id="mce-FNAME">
+                    </div>
+                    <div class="mc-field-group">
+                        <label for="mce-LNAME">Apellido </label>
+                        <input type="text" name="LNAME" class="text" id="mce-LNAME">
+                    </div>
+                    <div id="mce-responses" class="clear foot">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+                    <!-- Campo Anti-Spam -->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_0bbd1e543ce9471323d553663_a0eb20a680" tabindex="-1" value="">
+                    </div>
+                    <div class="optionalParent">
+                        <div class="clear foot">
+                            <input type="submit" value="Suscribirse" name="subscribe" id="mc-embedded-subscribe" class="button">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Gato Fiero. Todos los derechos reservados.</p>
+        <ul class="social-media">
+            <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const primaryMenu = document.querySelector("#primary-menu");
+
+            menuToggle.addEventListener("click", function () {
+                const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+                menuToggle.setAttribute("aria-expanded", !isExpanded);
+                primaryMenu.classList.toggle("open");
+            });
+        });
+
+        function changeLanguage() {
+            const lang = document.getElementById('languageSelector').value;
+            window.location.href = lang;
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+</body>
+</html>
 
