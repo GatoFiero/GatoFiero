@@ -177,6 +177,26 @@
         </ul>
     </footer>
 
+        <!-- Menu Toggle Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const primaryMenu = document.querySelector("#primary-menu");
+
+            menuToggle.addEventListener("click", function () {
+                const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+                menuToggle.setAttribute("aria-expanded", !isExpanded);
+                primaryMenu.classList.toggle("open");
+            });
+        });
+
+        // Language Change Script
+        function changeLanguage() {
+            const lang = document.getElementById('languageSelector').value;
+            window.location.href = lang;
+        }
+    </script>
+
     <!-- Include jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Mailchimp Validation Script -->
