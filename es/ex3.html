@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>EX3 - El Artista Enigmático</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Incluir Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <header>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Alternar menú de navegación">☰ Menú</button>
+    <nav id="primary-menu">
+        <ul class="navigation-menu">
+            <li><a href="/es/index.html#home" class="active">Inicio</a></li>
+            <li><a href="/es/quienesgatofiero.html">¿Quién es Gato Fiero?</a></li>
+            <li><a href="/es/discografia.html">Discografía</a></li>
+            <li><a href="/es/correodefans.html">Correo de Fans</a></li>
+            <li><a href="/es/ensayosyarticulos.html">Ensayos y Artículos</a></li>
+            <li><a href="/es/galeriadefotos.html">Galería de Fotos</a></li>
+            <li><a href="/es/ex3.html">EX3</a></li>
+            <li><a href="/es/blog.html">Blog</a></li>
+            <li><a href="/es/testimonios.html">Testimonios</a></li>
+            <li><a href="/es/contacto.html">Contacto</a></li>
+        </ul>
+        <!-- Selector de Idioma -->
+        <select id="languageSelector" onchange="changeLanguage()">
+            <option value="/">Por defecto (Inglés)</option>
+            <option value="/en/">English</option>
+            <option value="/es/">Español</option>
+            <option value="/fr/">Français</option>
+        </select>
+    </nav>
+</header>
+
+    <!-- Sección de Galería de EX3 -->
+    <section id="ex3-gallery">
+        <h2>Bienvenido al Mundo de EX3</h2>
+        <p>Adéntrate en un reino donde lo ordinario se disuelve y lo invisible cobra vida. Cada pieza es una puerta hacia un nuevo misterio. ¿Te atreves a explorar?</p>
+        <div class="image-gallery">
+            <!-- Reemplazar con imágenes reales del arte de EX3 -->
+            <img src="../Images/ex3-art1.jpg" alt="Arte de EX3 1">
+            <img src="../Images/ex3-art2.jpg" alt="Arte de EX3 2">
+            <img src="../Images/ex3-art3.jpg" alt="Arte de EX3 3">
+            <!-- Agregar más imágenes según sea necesario -->
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2023 EX3 y Gato Fiero. Todos los derechos reservados.</p>
+        <ul class="social-media">
+            <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+            <!-- Agregar más íconos de redes sociales según sea necesario -->
+        </ul>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
 
