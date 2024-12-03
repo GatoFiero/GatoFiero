@@ -95,36 +95,42 @@ header {
 /* Mobile Navigation Menu */
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block; /* Visible on mobile */
+        display: block;
         text-align: center;
         font-size: 1.5rem;
-        padding: 10px 20px; /* More padding for touchscreens */
-        margin: 0 auto; /* Center-align button */
-        border-radius: 5px; /* Match overall button style */
+        padding: 10px 20px;
+        margin: 0 auto;
+        border-radius: 5px;
     }
 
+    /* Hide the navigation menu by default */
     .navigation-menu {
+        display: none;
         flex-direction: column;
         align-items: center;
-        overflow: hidden;
-        transform: scaleY(0); /* Menu starts hidden */
-        transform-origin: top;
-        transition: transform 0.3s ease;
+        width: 100%;
     }
 
+    /* Show the navigation menu when active */
     .navigation-menu.active {
-        transform: scaleY(1); /* Menu expands when active */
+        display: flex;
+        position: absolute;
+        top: 100%; /* Position below the header */
+        left: 0;
+        background-color: #003300;
+        z-index: 1000;
     }
 
     .navigation-menu li {
-        margin: 10px 0; /* More space between items */
-        width: 100%; /* Full-width for better tapping */
+        margin: 10px 0;
+        width: 100%;
     }
 
     .navigation-menu a {
-        padding: 10px 20px; /* Ensure large clickable areas */
+        padding: 10px 20px;
         text-align: center;
-        display: block; /* Center-align the text */
+        display: block;
+        width: 100%;
     }
 }
 
