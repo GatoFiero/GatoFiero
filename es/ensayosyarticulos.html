@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensayos y Artículos - Sitio Web de Gato Fiero</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Estilos para la página de Ensayos y Artículos */
+        main#essaysandarticles {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #101010;
+            border: 1px solid lime;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        main#essaysandarticles h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: lime;
+        }
+
+        main#essaysandarticles p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: lime;
+        }
+
+        .essays-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .essays-links a {
+            display: block;
+            padding: 15px 20px;
+            background-color: #003300;
+            color: lime;
+            text-decoration: none;
+            border: 1px solid lime;
+            border-radius: 8px;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .essays-links a:hover {
+            background-color: #002200;
+            color: red;
+        }
+
+        /* Estilos del Pie de Página */
+        footer {
+            background-color: #101010;
+            color: lime;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid lime;
+            margin-top: 40px;
+        }
+
+        footer ul.social-media {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 0;
+        }
+
+        footer ul.social-media li {
+            margin: 0;
+        }
+
+        footer ul.social-media a {
+            color: red;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer ul.social-media a:hover {
+            color: lime;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Alternar menú de navegación">☰ Menú</button>
+        <ul class="navigation-menu">
+            <li><a href="/es/index.html">Inicio</a></li>
+            <li><a href="/es/quienesgatofiero.html">¿Quién es Gato Fiero?</a></li>
+            <li><a href="/es/discografia.html">Discografía</a></li>
+            <li><a href="/es/galeriadefotos.html">Galería de Fotos</a></li>
+            <li><a href="/es/correodefans.html">Correo de Fans</a></li>
+            <li><a href="/es/ensayosyarticulos.html" class="active">Ensayos y Artículos</a></li>
+            <li><a href="/es/contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+
+    <main id="essaysandarticles">
+        <h1>Ensayos y Artículos sobre Gato Fiero</h1>
+        <p>Bienvenido a la página de Ensayos y Artículos. Aquí encontrarás una colección curada de escritos que profundizan en la creatividad, impacto y enigma de Gato Fiero. Esto incluye ensayos provocativos, análisis detallados y estudios innovadores que desafían la comprensión convencional de la influencia de la música.</p>
+        <p>Investigaciones recientes revelan descubrimientos de vanguardia sobre los elementos sónicos en la música de Gato Fiero. Los estudios sugieren que sus composiciones resuenan en frecuencias que evocan respuestas emocionales y psicológicas profundas, posicionando su trabajo en la vanguardia de la innovación musical y la exploración científica. Mantente atento para más revelaciones a medida que avanza la investigación.</p>
+        <ul class="essays-links">
+            <li><a href="/es/profeciasantiguas.html">Las Profecías Eran Ciertas: Revelaciones de Fuego y Ferocidad</a></li>
+            <li><a href="/es/lafrecuenciadelasanacion.html">La Frecuencia de la Sanación: ¿Está Gato Fiero Abriendo un Camino Revolucionario hacia el Bienestar Médico?</a></li>
+            <li><a href="/es/lateoriadelapineal.html">La Teoría de la Glándula Pineal: ¿Estimula la Música de Gato Fiero el 'Tercer Ojo'?</a></li>
+            <li><a href="#">Marcador de Posición para Artículo 3</a></li>
+            <li><a href="#">Marcador de Posición para Ensayo 4</a></li>
+            <li><a href="#">Marcador de Posición para Investigación 5</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Gato Fiero</p>
+        <ul class="social-media">
+            <li><a href="#" aria-label="Seguir en X"><i class="fab fa-x"></i></a></li>
+            <li><a href="#" aria-label="Seguir en Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" aria-label="Seguir en TikTok"><i class="fab fa-tiktok"></i></a></li>
+            <li><a href="#" aria-label="Seguir en Facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" aria-label="Conectar en WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="#" aria-label="Escuchar en Spotify"><i class="fab fa-spotify"></i></a></li>
+            <li><a href="#" aria-label="Suscribirse en YouTube"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
 
