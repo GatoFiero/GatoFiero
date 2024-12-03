@@ -1,13 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
     // Navigation Toggle Functionality
     const menuToggle = document.querySelector('.menu-toggle');
     const navigationMenu = document.getElementById('primary-menu');
 
     if (menuToggle && navigationMenu) {
-        menuToggle.addEventListener('click', () => {
+        menuToggle.addEventListener('click', function() {
             const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
             menuToggle.setAttribute('aria-expanded', !isExpanded);
-            navigationMenu.classList.toggle('active');
+            navigationMenu.classList.toggle('active'); // Use 'active' consistently
         });
     }
 
@@ -20,18 +20,21 @@ document.addEventListener('DOMContentLoaded', () => {
         expandedImgContainer.innerHTML = `<img src="${pressArticle.src}" alt="${pressArticle.alt}">`;
         document.body.appendChild(expandedImgContainer);
 
-        pressArticle.addEventListener('click', () => {
+        pressArticle.addEventListener('click', function() {
             expandedImgContainer.style.display = 'flex';
         });
 
-        expandedImgContainer.addEventListener('click', () => {
+        expandedImgContainer.addEventListener('click', function() {
             expandedImgContainer.style.display = 'none';
         });
     }
-});
 
-// Language Selector Script
-function changeLanguage() {
-    const lang = document.getElementById('languageSelector').value;
-    window.location.href = lang; // Redirect to the selected language folder
-}
+    // Language Change Script
+    function changeLanguage() {
+        const lang = document.getElementById('languageSelector').value;
+        window.location.href = lang;
+    }
+
+    // Expose the function to the global scope
+    window.changeLanguage = changeLanguage;
+});
