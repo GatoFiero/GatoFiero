@@ -5,27 +5,36 @@
     <title>Blog - Gato Fiero</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to your styles.css -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <!-- Font Awesome for Icons -->
     <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Navigation Menu -->
     <header>
-        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰ Menu</button>
-        <nav>
-            <ul class="navigation-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="whoisgatofiero.html">Who is Gato Fiero?</a></li>
-                <li><a href="discography.html">Discography</a></li>
-                <li><a href="photogallery.html">Photo Gallery</a></li>
-                <li><a href="ex3.html">EX3</a></li>
-                <li><a href="blog.html" class="active">Blog</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation menu">☰ Menu</button>
+    <nav id="primary-menu">
+        <ul class="navigation-menu">
+            <li><a href="/en/index.html>Home</a></li>
+            <li><a href="/en/whoisgatofiero.html">Who is Gato Fiero?</a></li>
+            <li><a href="/en/discography.html">Discography</a></li>
+            <li><a href="/en/fanmail.html">Fan Mail</a></li>
+            <li><a href="/en/essaysandarticles.html">Essays & Articles</a></li>
+            <li><a href="/en/photogallery.html">Photo Gallery</a></li>
+            <li><a href="/en/ex3.html">EX3</a></li>
+            <li><a href="/en/blog.html" class="active">Blog</a></li>
+            <li><a href="/en/testimonials.html">Testimonials</a></li>
+            <li><a href="/en/contact.html">Contact</a></li>
+        </ul>
+        <!-- Language Selector -->
+        <select id="languageSelector" onchange="changeLanguage()">
+            <option value="/">Default (English)</option>
+            <option value="/en/">English</option>
+            <option value="/es/">Español</option>
+            <option value="/fr/">Français</option>
+        </select>
+    </nav>
+</header>
 
     <!-- Blog Section -->
     <section id="blog">
