@@ -1,9 +1,7 @@
-// scripts.js
-
 document.addEventListener('DOMContentLoaded', () => {
     // Navigation Toggle Functionality
     const menuToggle = document.querySelector('.menu-toggle');
-    const navigationMenu = document.querySelector('.navigation-menu');
+    const navigationMenu = document.getElementById('primary-menu');
 
     if (menuToggle && navigationMenu) {
         menuToggle.addEventListener('click', () => {
@@ -32,16 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-
-<script>
-    function changeLanguage() {
-        const lang = document.getElementById('languageSelector').value;
-        window.location.href = lang; // Redirect to the selected language folder
-    }
-</script>
-
-
-function toggleMenu() {
-    const menu = document.getElementById("primary-menu");
-    menu.classList.toggle("active");
+// Language Selector Script
+function changeLanguage() {
+    const lang = document.getElementById('languageSelector').value;
+    window.location.href = lang; // Redirect to the selected language folder
 }
