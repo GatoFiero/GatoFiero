@@ -940,3 +940,54 @@ main#thewitchhunt strong {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+
+/* Desktop Styles */
+#primary-menu {
+    display: flex; /* Show the menu as a row on desktop */
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-toggle {
+    display: none; /* Hide the menu toggle button on desktop */
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show the menu toggle button on mobile */
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    #primary-menu {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        background-color: #f4f4f4;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    #primary-menu.open {
+        display: flex; /* Show the menu when it is toggled */
+    }
+
+    .navigation-menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
