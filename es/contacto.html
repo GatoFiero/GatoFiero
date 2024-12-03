@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Gato Fiero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a tu styles.css -->
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Font Awesome para Iconos -->
+    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <header>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Alternar menú de navegación">☰ Menú</button>
+    <nav id="primary-menu">
+        <ul class="navigation-menu">
+            <li><a href="/es/index.html#home" class="active">Inicio</a></li>
+            <li><a href="/es/quienesgatofiero.html">¿Quién es Gato Fiero?</a></li>
+            <li><a href="/es/discografia.html">Discografía</a></li>
+            <li><a href="/es/correodefans.html">Correo de Fans</a></li>
+            <li><a href="/es/ensayosyarticulos.html">Ensayos y Artículos</a></li>
+            <li><a href="/es/galeriadefotos.html">Galería de Fotos</a></li>
+            <li><a href="/es/ex3.html">EX3</a></li>
+            <li><a href="/es/blog.html">Blog</a></li>
+            <li><a href="/es/testimonios.html">Testimonios</a></li>
+            <li><a href="/es/contacto.html">Contacto</a></li>
+        </ul>
+        <!-- Selector de Idioma -->
+        <select id="languageSelector" onchange="changeLanguage()">
+            <option value="/">Predeterminado (Español)</option>
+            <option value="/en/">Inglés</option>
+            <option value="/es/">Español</option>
+            <option value="/fr/">Francés</option>
+        </select>
+    </nav>
+</header>
+
+    <!-- Sección de Contacto -->
+    <section id="contact">
+        <h2>Contáctame</h2>
+        <form action="https://formspree.io/f/xeojglqa" method="POST">
+            <label for="name">Nombre:<span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:<span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="_replyto" required>
+
+            <label for="message">Mensaje:<span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" required></textarea>
+
+            <!-- Campo Honeypot -->
+            <div style="display:none;">
+                <input type="text" name="_gotcha">
+            </div>
+
+            <button type="submit" class="contact-button">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Sección del Pie de Página -->
+    <footer>
+        <p>&copy; 2023 Gato Fiero. Todos los derechos reservados.</p>
+        <ul class="social-media">
+            <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://facebook.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://tiktok.com/@yourhandle" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+            <li><a href="https://wa.me/yourwhatsappnumber" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+            <!-- Añade más iconos de redes sociales según sea necesario -->
+        </ul>
+    </footer>
+
+    <!-- JavaScript para Alternar Navegación -->
+    <script src="../scripts.js"></script>
+</body>
+</html>
 
