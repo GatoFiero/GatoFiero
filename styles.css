@@ -106,17 +106,14 @@ header {
     .navigation-menu {
         flex-direction: column;
         align-items: center;
-        display: none;
-        transition: max-height 0.3s ease, opacity 0.3s ease;
-        max-height: 0;
         overflow: hidden;
-        opacity: 0;
+        transform: scaleY(0); /* Menu starts hidden */
+        transform-origin: top;
+        transition: transform 0.3s ease;
     }
 
     .navigation-menu.active {
-        display: flex; /* Ensure flex works after toggling */
-        max-height: 500px; /* Adjust this based on menu height */
-        opacity: 1;
+        transform: scaleY(1); /* Menu expands when active */
     }
 
     .navigation-menu li {
@@ -128,17 +125,6 @@ header {
         padding: 10px 20px; /* Ensure large clickable areas */
         text-align: center;
         display: block; /* Center-align the text */
-    }
-
-    /* Optional: Add smooth dropdown animation */
-    .navigation-menu {
-        transform: scaleY(0); /* Menu starts hidden */
-        transform-origin: top;
-        transition: transform 0.3s ease;
-    }
-
-    .navigation-menu.active {
-        transform: scaleY(1); /* Menu expands when active */
     }
 }
 
