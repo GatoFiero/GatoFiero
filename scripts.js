@@ -1,15 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Navigation Toggle Functionality
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navigationMenu = document.getElementById('primary-menu');
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const primaryMenu = document.querySelector("#primary-menu");
 
-    if (menuToggle && navigationMenu) {
-        menuToggle.addEventListener('click', function() {
-            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-            menuToggle.setAttribute('aria-expanded', !isExpanded);
-            navigationMenu.classList.toggle('active'); // Use 'active' consistently
-        });
-    }
+    menuToggle.addEventListener("click", function () {
+        const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", !isExpanded);
+        primaryMenu.classList.toggle("open"); // Ensure you have CSS for .open
+    });
+});
 
     // Press Image Expansion Functionality
     const pressArticle = document.getElementById('press-article');
