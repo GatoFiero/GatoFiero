@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Site Web de Gato Fiero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenue sur le site officiel de Gato Fiero. Découvrez de la musique, de l'art, des articles de blog et contactez-nous.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Basculer le menu de navigation">☰ Menu</button>
+    <nav id="primary-menu">
+        <ul class="navigation-menu">
+            <li><a href="/fr/index.html#home" class="active">Accueil</a></li>
+            <li><a href="/fr/quisontgatofiero.html">Qui est Gato Fiero ?</a></li>
+            <li><a href="/fr/discographie.html">Discographie</a></li>
+            <li><a href="/fr/courrierdesfans.html">Courrier des fans</a></li>
+            <li><a href="/fr/essaisetarticles.html">Essais & Articles</a></li>
+            <li><a href="/fr/galeriedesphotos.html">Galerie Photo</a></li>
+            <li><a href="/fr/ex3.html">EX3</a></li>
+            <li><a href="/fr/blog.html">Blog</a></li>
+            <li><a href="/fr/temoignages.html">Témoignages</a></li>
+            <li><a href="/fr/contact.html">Contact</a></li>
+        </ul>
+        <select id="languageSelector" onchange="changeLanguage()">
+            <option value="/en/">English</option>
+            <option value="/es/">Español</option>
+            <option value="/fr/">Français</option>
+        </select>
+    </nav>
+</header>
+<section id="home">
+    <h1>Bienvenue dans l'univers de Gato Fiero</h1>
+    <p>Explorer les frontières du son et de l'âme</p>
+    <div class="hero-buttons">
+        <a href="/fr/discographie.html" class="hero-button">Écoutez maintenant</a>
+    </div>
+    <div class="spotify-embed">
+        <iframe src="https://open.spotify.com/embed/artist/4ukz8Pl0euzsRvqPrPW50q" frameborder="0" allowtransparency="true" allow="encrypted-media" title="Gato Fiero sur Spotify"></iframe>
+    </div>
+</section>
+<section id="mission">
+    <h2>Notre mission</h2>
+    <p>Vous inspirer à persévérer dans vos épreuves, merci de nous écouter.</p>
+</section>
+<section id="about">
+    <h2>Murmures dans l'ombre</h2>
+    <p>Avec un nom murmuré dans les cercles artistiques, peu de choses sont connues sur la personne derrière le pseudonyme. Le travail de Gato Fiero défie toutes les étiquettes conventionnelles. Une danse entre lumière et ombre, chaque œuvre évoque une réflexion des profondeurs invisibles de l'âme de l'artiste.</p>
+    <img src="../Images/background.jpg" alt="Gato Fiero">
+    <div class="hero-buttons">
+        <a href="/fr/quisontgatofiero.html" class="hero-button">Qui est Gato Fiero ?</a>
+    </div>
+</section>
+<section id="gallery">
+    <h2>Avez-vous vu ce chien ?</h2>
+    <p>Ne l'approchez pas - Signalez immédiatement !</p>
+    <div class="image-gallery">
+        <img src="../Images/Peruvian-Hairless-Closeup.jpg" alt="Un chien sans poils péruvien">
+        <img src="../Images/da3edd5dc1b844c060019c7411a2dc37.jpg" alt="Œuvre d'art">
+    </div>
+</section>
+<section id="buy-music">
+    <h2>Achetez ma musique</h2>
+    <p>Soutenez ma musique en achetant directement des morceaux et des albums sur Bandcamp.</p>
+    <a href="https://gatofiero.bandcamp.com/" target="_blank" class="bandcamp-button">Visitez mon Bandcamp</a>
+</section>
+
+ <!-- Section Art EX3 -->
+<section id="ex3">
+    <h2>Ex3 - L'artiste énigmatique</h2>
+    <p>Plongez dans le royaume mystérieux d'Ex3.</p>
+    <a href="/fr/ex3.html" class="ex3-button">Entrer</a>
+</section>
+
+<!-- Section Presse -->
+<section id="press">
+    <h2>Presse & Médias</h2>
+    <p>Lisez ce que les autres disent de Gato Fiero.</p>
+    <div class="press-image">
+        <img src="../Images/deadcatbouncearticle.png" alt="Article de presse" id="press-article">
+    </div>
+    <blockquote>
+        <p><em>"Alors que la musique remplissait la pièce, j'ai ressenti un sentiment de liberté m'envahir. Pendant ces quelques précieux moments, j'ai été transporté hors de cet endroit morne."</em></p>
+        <cite>— Ray Finkle</cite>
+    </blockquote>
+</section>
+
+<!-- Section Faire un don -->
+<section id="donate">
+    <h2>Offrez une bière à Gato</h2>
+    <p>Votre soutien maintient la créativité en mouvement.</p>
+    <div class="donation-buttons">
+        <a href="https://cash.app/$GatoFiero" target="_blank" class="donate-button">Faire un don via CashApp</a>
+    </div>
+</section>
+
+<!-- Section Inscription à la liste de diffusion -->
+<section id="mailing-list">
+    <h2>Rejoignez la liste de diffusion</h2>
+    <p>Restez informé des nouvelles sorties, événements et contenus exclusifs.</p>
+    <!-- Formulaire d'inscription Mailchimp -->
+    <div id="mc_embed_signup">
+        <form action="https://gatofiero.us13.list-manage.com/subscribe/post?u=0bbd1e543ce9471323d553663&amp;id=a0eb20a680&amp;f_id=0073f5e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+            <div id="mc_embed_signup_scroll">
+                <div class="indicates-required"><span class="asterisk">*</span> indique requis</div>
+                <div class="mc-field-group">
+                    <label for="mce-EMAIL">Adresse e-mail <span class="asterisk">*</span></label>
+                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-FNAME">Prénom </label>
+                    <input type="text" name="FNAME" class="text" id="mce-FNAME">
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-LNAME">Nom </label>
+                    <input type="text" name="LNAME" class="text" id="mce-LNAME">
+                </div>
+                <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <!-- Champ anti-spam -->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_0bbd1e543ce9471323d553663_a0eb20a680" tabindex="-1" value="">
+                </div>
+                <div class="optionalParent">
+                    <div class="clear foot">
+                        <input type="submit" value="S'abonner" name="subscribe" id="mc-embedded-subscribe" class="button">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Gato Fiero. Tous droits réservés.</p>
+    <ul class="social-media">
+        <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script src="../scripts.js"></script>
+</body>
+</html>
 
