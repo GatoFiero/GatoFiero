@@ -39,3 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = lang; // Redirect to the selected language folder
     }
 </script>
+
+
+function toggleMenu() {
+    const menu = document.getElementById("primary-menu");
+    menu.classList.toggle("active");
+}
