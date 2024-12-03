@@ -1,11 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
     const primaryMenu = document.querySelector("#primary-menu");
+    const navMenu = document.querySelector("#navigation-menu");
 
     menuToggle.addEventListener("click", function () {
         const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
         menuToggle.setAttribute("aria-expanded", !isExpanded);
-        primaryMenu.classList.toggle("open"); // Ensure you have CSS for .open
+        primaryMenu.classList.toggle("open");
+        if (isExpanded)
+        {
+            // close the menu if it is open
+             navMenu.style.display = "none";
+        }
+        else 
+        {
+            // show the menu if it is closed
+            navMenu.style.display="block";
+        }
     });
 });
 
