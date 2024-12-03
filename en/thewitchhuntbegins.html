@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gato Fiero Under Fire</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <style>
         /* Specific styling for the December 1st email page */
         main#emaildec1 {
@@ -97,17 +97,29 @@
 </head>
 <body>
     <header>
-        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰ Menu</button>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation menu">☰ Menu</button>
+    <nav id="primary-menu">
         <ul class="navigation-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="whoisgatofiero.html">Who is Gato Fiero?</a></li>
-            <li><a href="discography.html">Discography</a></li>
-            <li><a href="photogallery.html">Photo Gallery</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/en/index.html#home" class="active">Home</a></li>
+            <li><a href="/en/whoisgatofiero.html">Who is Gato Fiero?</a></li>
+            <li><a href="/en/discography.html">Discography</a></li>
+            <li><a href="/en/fanmail.html">Fan Mail</a></li>
+            <li><a href="/en/essaysandarticles.html">Essays & Articles</a></li>
+            <li><a href="/en/photogallery.html">Photo Gallery</a></li>
+            <li><a href="/en/ex3.html">EX3</a></li>
+            <li><a href="/en/blog.html">Blog</a></li>
+            <li><a href="/en/testimonials.html">Testimonials</a></li>
+            <li><a href="/en/contact.html">Contact</a></li>
         </ul>
-    </header>
+        <!-- Language Selector -->
+        <select id="languageSelector" onchange="changeLanguage()">
+            <option value="/">Default (English)</option>
+            <option value="/en/">English</option>
+            <option value="/es/">Español</option>
+            <option value="/fr/">Français</option>
+        </select>
+    </nav>
+</header>
 
     <div class="alert-banner">
         ALERT: This email is part of an ongoing modern-day witch hunt against Gato Fiero.
@@ -173,11 +185,6 @@
         </ul>
     </footer>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.navigation-menu');
-            menu.classList.toggle('active');
-        }
-    </script>
+    <script src="/scripts.js"></script>
 </body>
 </html>
