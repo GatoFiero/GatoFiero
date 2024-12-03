@@ -27,12 +27,19 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Language Change Script
-    function changeLanguage() {
-        const lang = document.getElementById('languageSelector').value;
-        window.location.href = lang;
-    }
+  // Language change script
+function changeLanguage() {
+    const lang = document.getElementById('languageSelector').value;
 
-    // Expose the function to the global scope
-    window.changeLanguage = changeLanguage;
-});
+    // Get the current path (e.g., "/en/index.html")
+    const currentPath = window.location.pathname;
+
+    // Extract the filename from the path (e.g., "index.html")
+    const filename = currentPath.split('/').pop();
+
+    // Construct the new path based on the selected language
+    const newPath = lang + filename;
+
+    // Redirect to the new path
+    window.location.href = newPath;
+}
