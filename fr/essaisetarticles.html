@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essais et Articles - Site de Gato Fiero</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Styling for the Essays and Articles page */
+        main#essaysandarticles {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #101010;
+            border: 1px solid lime;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        main#essaysandarticles h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: lime;
+        }
+
+        main#essaysandarticles p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: lime;
+        }
+
+        .essays-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .essays-links a {
+            display: block;
+            padding: 15px 20px;
+            background-color: #003300;
+            color: lime;
+            text-decoration: none;
+            border: 1px solid lime;
+            border-radius: 8px;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .essays-links a:hover {
+            background-color: #002200;
+            color: red;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #101010;
+            color: lime;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid lime;
+            margin-top: 40px;
+        }
+
+        footer ul.social-media {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 0;
+        }
+
+        footer ul.social-media li {
+            margin: 0;
+        }
+
+        footer ul.social-media a {
+            color: red;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer ul.social-media a:hover {
+            color: lime;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Basculer le menu de navigation">☰ Menu</button>
+    <nav id="primary-menu">
+        <ul class="navigation-menu">
+            <li><a href="/fr/index.html#home" class="active">Accueil</a></li>
+            <li><a href="/fr/quisontgatofiero.html">Qui Sont Gato Fiero ?</a></li>
+            <li><a href="/fr/discographie.html">Discographie</a></li>
+            <li><a href="/fr/courrierdesfans.html">Courrier des Fans</a></li>
+            <li><a href="/fr/essaisetarticles.html">Essais & Articles</a></li>
+            <li><a href="/fr/galeriedesphotos.html">Galerie des Photos</a></li>
+            <li><a href="/fr/ex3.html">EX3</a></li>
+            <li><a href="/fr/blog.html">Blog</a></li>
+            <li><a href="/fr/temoignages.html">Témoignages</a></li>
+            <li><a href="/fr/contact.html">Contact</a></li>
+        </ul>
+        <!-- Language Selector -->
+        <select id="languageSelector" onchange="changeLanguage()">
+            <option value="/en/">English</option>
+            <option value="/es/">Español</option>
+            <option value="/fr/">Français</option>
+        </select>
+    </nav>
+    </header>
+
+    <main id="essaysandarticles">
+        <h1>Essais et Articles sur Gato Fiero</h1>
+        <p>Bienvenue sur la page Essais et Articles. Ici, vous trouverez une collection soigneusement sélectionnée d'écrits explorant l'art, l'impact et l'énigme de Gato Fiero. Ces textes incluent des essais stimulants, des analyses approfondies et des recherches novatrices qui remettent en question notre compréhension conventionnelle de l'influence musicale.</p>
+        <p>Les recherches récentes dévoilent des découvertes révolutionnaires sur les éléments sonores dans la musique de Gato Fiero. Des études suggèrent que ses compositions résonnent à des fréquences qui provoquent des réponses émotionnelles et psychologiques profondes, plaçant son œuvre à l'avant-garde de l'innovation musicale et de l'exploration scientifique. Restez à l'écoute pour plus de révélations à mesure que les recherches progressent.</p>
+        <ul class="essays-links">
+            <li><a href="/fr/prophetiesanciennes.html">Les Prophéties Étaient Vraies : Révélations de Feu et de Fureur</a></li>
+            <li><a href="/fr/lafrequenceguérison.html">La Fréquence de Guérison : Gato Fiero Ouvre-t-il une Voie Révolutionnaire Vers le Bien-être Médical ?</a></li>
+            <li><a href="/fr/latheoriedelapineale.html">La Théorie de la Glande Pinéale : La Musique de Gato Fiero Stimule-t-elle le 'Troisième Œil' ?</a></li>
+            <li><a href="#">Placeholder pour Article 3</a></li>
+            <li><a href="#">Placeholder pour Essai 4</a></li>
+            <li><a href="#">Placeholder pour Recherche 5</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Gato Fiero. Tous droits réservés.</p>
+        <ul class="social-media">
+            <li><a href="#" aria-label="Suivez-nous sur X"><i class="fab fa-x"></i></a></li>
+            <li><a href="#" aria-label="Suivez-nous sur Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" aria-label="Suivez-nous sur TikTok"><i class="fab fa-tiktok"></i></a></li>
+            <li><a href="#" aria-label="Suivez-nous sur Facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" aria-label="Connectez-vous sur WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="#" aria-label="Écoutez-nous sur Spotify"><i class="fab fa-spotify"></i></a></li>
+            <li><a href="#" aria-label="Abonnez-vous sur YouTube"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
 
