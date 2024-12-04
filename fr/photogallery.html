@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerie de Photos - Gato Fiero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lien vers styles.css -->
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Font Awesome pour les icônes -->
+    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Menu de Navigation -->
+    <header>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Basculer le menu de navigation">☰ Menu</button>
+    <nav id="primary-menu">
+        <ul class="navigation-menu">
+            <li><a href="/fr/index.html#home" class="active">Accueil</a></li>
+            <li><a href="/fr/whoisgatofiero.html">Qui est Gato Fiero ?</a></li>
+            <li><a href="/fr/discography.html">Discographie</a></li>
+            <li><a href="/fr/fanmail.html">Courrier des Fans</a></li>
+            <li><a href="/fr/essaysandarticles.html">Essais et Articles</a></li>
+            <li><a href="/fr/photogallery.html">Galerie de Photos</a></li>
+            <li><a href="/fr/ex3.html">EX3</a></li>
+            <li><a href="/fr/blog.html">Blog</a></li>
+            <li><a href="/fr/testimonials.html">Témoignages</a></li>
+            <li><a href="/fr/contact.html">Contact</a></li>
+        </ul>
+        <!-- Sélecteur de Langue -->
+        <select id="languageSelector" onchange="changeLanguage()">
+            <option value="/en/">English</option>
+            <option value="/es/">Español</option>
+            <option value="/fr/">Français</option>
+        </select>
+    </nav>
+</header>
 
+    <!-- Section Galerie de Photos -->
+    <section id="photogallery">
+        <h1>Galerie de Photos</h1>
+        <div class="image-gallery">
+            <img src="../Images/gallery1.jpg" alt="Image de la Galerie 1">
+            <img src="../Images/gallery2.jpg" alt="Image de la Galerie 2">
+            <img src="../Images/gallery3.jpg" alt="Image de la Galerie 3">
+            <img src="../Images/gallery4.jpg" alt="Image de la Galerie 4">
+            <!-- Ajouter plus d'images si nécessaire -->
+        </div>
+    </section>
+
+    <!-- Section Footer -->
+    <footer>
+        <p>&copy; 2023 Gato Fiero. Tous droits réservés.</p>
+        <ul class="social-media">
+            <li><a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://instagram.com/yourhandle" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://facebook.com/yourhandle" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://tiktok.com/@yourhandle" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+            <li><a href="https://wa.me/yourwhatsappnumber" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+            <!-- Ajouter plus de liens de réseaux sociaux si nécessaire -->
+        </ul>
+    </footer>
+
+    <!-- JavaScript pour la navigation -->
+    <script src="../scripts.js"></script>
+</body>
+</html>
