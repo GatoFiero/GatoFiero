@@ -208,6 +208,38 @@ header {
     margin: 0 auto;
 }
 
+#video-section {
+    text-align: center;
+    margin: 40px 0; /* Adds spacing above and below the section */
+    padding: 20px; /* Optional: Adds padding inside the section */
+    background-color: #000; /* Matches the background color of your other sections */
+    border: 2px solid green; /* Optional: Add a border like the rest of your website */
+}
+
+#video-section h2 {
+    color: #0f0; /* Matches the green text color */
+    margin-bottom: 20px; /* Adds space between the title and the video */
+    font-size: 1.5rem; /* Adjusts the font size of the section title */
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Limits the video width */
+    margin: 0 auto; /* Centers the video horizontally */
+    padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* Gallery Section */
 #gallery {
     padding: 40px 20px;
