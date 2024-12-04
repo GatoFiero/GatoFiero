@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>EX3 - L'Artiste Enigmatique</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inclure Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Menu de Navigation -->
+    <header>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Basculer le menu de navigation">☰ Menu</button>
+    <nav id="primary-menu">
+        <ul class="navigation-menu">
+            <li><a href="/fr/index.html#home" class="active">Accueil</a></li>
+            <li><a href="/fr/whoisgatofiero.html">Qui est Gato Fiero ?</a></li>
+            <li><a href="/fr/discography.html">Discographie</a></li>
+            <li><a href="/fr/fanmail.html">Courrier des Fans</a></li>
+            <li><a href="/fr/essaysandarticles.html">Essais et Articles</a></li>
+            <li><a href="/fr/photogallery.html">Galerie de Photos</a></li>
+            <li><a href="/fr/ex3.html">EX3</a></li>
+            <li><a href="/fr/blog.html">Blog</a></li>
+            <li><a href="/fr/testimonials.html">Témoignages</a></li>
+            <li><a href="/fr/contact.html">Contact</a></li>
+        </ul>
+        <!-- Sélecteur de Langue -->
+        <select id="languageSelector" onchange="changeLanguage()">
+            <option value="/en/">English</option>
+            <option value="/es/">Español</option>
+            <option value="/fr/">Français</option>
+        </select>
+    </nav>
+</header>
 
+    <!-- Section Galerie EX3 -->
+    <section id="ex3-gallery">
+        <h2>Bienvenue dans l'Univers d'EX3</h2>
+        <p>Pénétrez dans un royaume où l'ordinaire se dissout et où l'invisible prend vie. Chaque œuvre est une porte vers un nouveau mystère. Oserez-vous explorer ?</p>
+        <div class="image-gallery">
+            <!-- Remplacer par des images réelles des œuvres d'EX3 -->
+            <img src="../Images/ex3-art1.jpg" alt="Œuvre EX3 1">
+            <img src="../Images/ex3-art2.jpg" alt="Œuvre EX3 2">
+            <img src="../Images/ex3-art3.jpg" alt="Œuvre EX3 3">
+            <!-- Ajouter d'autres images si nécessaire -->
+        </div>
+    </section>
+
+    <!-- Section Footer -->
+    <footer>
+        <p>&copy; 2023 EX3 et Gato Fiero. Tous droits réservés.</p>
+        <ul class="social-media">
+            <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+            <!-- Ajouter d'autres icônes de réseaux sociaux si nécessaire -->
+        </ul>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
