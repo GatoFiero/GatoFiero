@@ -11,6 +11,24 @@
     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
     <!-- Your custom styles -->
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+    .video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+        height: 0;
+        overflow: hidden;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    </style>
 </head>
 <body>
     <!-- Navigation Menu -->
@@ -69,13 +87,15 @@
         </div>
     </section>
 
-    <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/-HNudRmi58c" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
+    <div class="video-container">
+    <iframe 
+        src="https://www.youtube.com/embed/-HNudRmi58c" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
     </iframe>
+    </div>
 
     <!-- Gallery Section -->
     <section id="gallery">
