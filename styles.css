@@ -213,7 +213,6 @@ header {
     margin: 40px 0; /* Adds spacing above and below the section */
     padding: 20px; /* Optional: Adds padding inside the section */
     background-color: #000; /* Matches the background color of your other sections */
-    border: 2px solid green; /* Optional: Add a border like the rest of your website */
 }
 
 #video-section h2 {
